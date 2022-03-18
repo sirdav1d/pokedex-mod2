@@ -59,9 +59,10 @@ section#card div.card {
 }
 
 section#card div.card img {
-	width: 80%;
+	width: 70%;
 	align-self: center;
-	filter: drop-shadow(6px 3px 1px rgb(0, 0, 0));
+	filter: drop-shadow(6px 3px 6px rgb(0, 0, 0));
+	border: none;
 }
 
 section#card div.card h2 {

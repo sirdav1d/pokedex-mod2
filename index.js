@@ -17,7 +17,8 @@ const pokedex = [
 			'It has a preference for hot things. When it rains, steam is said to spout from the tip of its tail.',
 		type: 'Fire',
 		abilities: 'Blaze',
-		image: 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png',
+		image:
+			'https://github.com/sirdav1d/pokedex-mod2/blob/main/public/media/charmander.gif',
 	},
 	{
 		id: 2,
@@ -26,7 +27,8 @@ const pokedex = [
 			'When Vaporeon’s fins begin to vibrate, it is a sign that rain will come within a few hours.',
 		type: 'Water',
 		abilities: 'Water Absorb',
-		image: 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/134.png',
+		image:
+			'https://github.com/sirdav1d/pokedex-mod2/blob/main/public/media/vaporeon.gif',
 	},
 ];
 
