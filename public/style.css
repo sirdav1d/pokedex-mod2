@@ -61,7 +61,7 @@ section#card div.card {
 
 section#card div.card img {
 	height: 50%;
-	transform: scale3d(80%, 80%, 80%);
+	transform: scale(75%, 75%);
 	align-self: center;
 	filter: drop-shadow(6px 3px 6px rgb(0, 0, 0));
 	border: none;
