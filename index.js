@@ -18,7 +18,7 @@ const pokedex = [
 		type: 'Fire',
 		abilities: 'Blaze',
 		image:
-			'https://github.com/sirdav1d/pokedex-mod2/blob/main/public/media/charmander.gif',
+			'https://www.pkparaiso.com/imagenes/espada_escudo/sprites/animados-gigante/charmander.gif',
 	},
 	{
 		id: 2,
@@ -28,7 +28,7 @@ const pokedex = [
 		type: 'Water',
 		abilities: 'Water Absorb',
 		image:
-			'https://github.com/sirdav1d/pokedex-mod2/blob/main/public/media/vaporeon.gif',
+			'https://www.pkparaiso.com/imagenes/espada_escudo/sprites/animados-gigante/vaporeon.gif',
 	},
 ];
 
