@@ -129,7 +129,7 @@ section#cadastro form button{
 	text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.726);
 	font-size: larger;
 	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.432), inset 1px -1px 2px rgb(0, 0, 0);
-	opacity: 0.8;
+	opacity: 0.9;
 }
 
 section#cadastro form button:hover{
