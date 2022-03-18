@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-    <h1>Minha Pokedex</h1>
+    <h1>Pokedex</h1>
     </header>
 
     <main>
@@ -20,8 +20,8 @@
             <img src= "<%= pokemon.image %>" alt="">
             <h2><%= pokemon.name %></h2>
             <p><%= pokemon.description %></p>
-            <p><%= pokemon.type %></p>
-            <p id="abilities"><%= pokemon.abilities %></p>
+            <p>Tipo: <%= pokemon.type %></p>
+            <p id="abilities">Habilidade: <%= pokemon.abilities %></p>
     </div>
 <%  }) %>
    </section>
@@ -37,7 +37,7 @@
            <input type='text' id="description" name='description'>
 
         <label for='type'>Tipo:</label>
-        <input type="text" id="type" nome='type'>
+        <input type="text" id="type" name='type'>
 
         <label for="abilities">Habilidade:</label>
         <input type="text" id="abilities" name='abilities'>

@@ -13,7 +13,8 @@ const pokedex = [
 	{
 		id: 1,
 		name: 'Charmander',
-		description:'It has a preference for hot things. When it rains, steam is said to spout from the tip of its tail.',
+		description:
+			'It has a preference for hot things. When it rains, steam is said to spout from the tip of its tail.',
 		type: 'Fire',
 		abilities: 'Blaze',
 		image: 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png',
@@ -35,10 +36,12 @@ app.get('/', (req, res) => {
 
 app.post('/add', (req, res) => {
 	const pokemon = req.body;
-
-	pokedex.push(pokemon)
+	pokemon.id = pokedex.length + 1;
+	pokedex.push(pokemon);
 	res.redirect('/');
 });
+
+app.put('/update')
 
 app.listen(3000, () =>
 	console.log('Servidor rodando em http://localhost:3000'),
