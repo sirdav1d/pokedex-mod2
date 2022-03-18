@@ -129,31 +129,33 @@ section#cadastro form button{
 	text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.726);
 	font-size: larger;
 	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.432), inset 1px -1px 2px rgb(0, 0, 0);
-	transition: all 1ms ease-in-out;
+	opacity: 0.8;
 }
 
 section#cadastro form button:hover{
 	cursor: pointer;
-	animation: 1s 1ms ease infinite alternate btn-anime;
+	animation: .7s 1ms ease-in-out forwards  btn-anime;
+
 }
 
 @keyframes btn-anime {
-
+	
 	50%{
 		color: aqua;
 		border: 2px solid aqua;
+		opacity: 0.95;
 	}
 
 	80%{
 		transform: scale(110%);
 		color: aqua;
-		border: 2px solid aqua;
-	
+		border: 2px solid aqua;	
 	}
 
 	100%{
 		transform: scale(110%);
 		color: aqua;
 		border: 2px solid aqua;
+		opacity: 1;
 	}
 }
