@@ -22,14 +22,13 @@
 }
 
 header {
-	padding: 1rem;
 	background-color: rgba(252, 40, 40, 0.918);
-	box-shadow: 4px 2px 10px rgba(0, 0, 0, 0.795), inset 4px 0px 10px rgb(0, 0, 0);
+	box-shadow: 4px 2px 10px rgba(0, 0, 0, 0.795), inset 4px 0px 3px rgb(0, 0, 0);
 }
 
 header h1 {
 	font-family: pokemon-hollow;
-	font-size: 4rem;
+	font-size: 3rem;
 	font-weight: bolder;
 	color: rgb(255, 217, 4);
 	text-align: center;
@@ -43,23 +42,112 @@ main {
 section#card {
 	display: flex;
 	justify-content: space-evenly;
+	align-items: center;
 	margin-top: 3rem;
 }
 
 section#card div.card {
-	width: 15rem;
-	box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.432);
+	color: whitesmoke;
+	width: 14rem;
+	box-shadow: 5px 5px 7px 1px rgba(0, 0, 0, 0.432), inset  3px -3px 2px rgba(0, 0, 0, 0.432);
 	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	background-color: rgba(34, 34, 34, 0.925);
 }
 
 section#card div.card img {
-	width: 100%;
+	width: 80%;
+	align-self: center;
+	filter: drop-shadow(6px 3px 1px rgb(0, 0, 0));
 }
 
 section#card div.card h2 {
-	margin-bottom: 1rem;
+	font-family: pokemon-hollow;
+	font-weight: bolder;
+	color: rgba(255, 50, 50, 0.918);
+	text-shadow: 6px 3px 3px rgb(0, 0, 0);
+	font-size: 2rem;
 }
 
 section#card div.card p {
+	font-size: smaller;
+	margin-bottom: 0.5rem;
+}
+
+section#card div.card p#abilities{
+	margin-bottom: -.5rem;
+}
+
+section#cadastro{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 5rem;
+}
+
+section#cadastro h2{
+	width: 100%;
+	text-align: center;
+	padding-bottom: 2rem;
+}
+
+section#cadastro form{
+	width: 50%;
+}
+
+section#cadastro form input{
+	width: 100%;
+	padding: .5rem;
+	font-size: 1rem;
+	outline: none;
+	border: solid 2px #05574a57;
 	margin-bottom: 1rem;
+}
+
+section#cadastro form label{
+	color: #064037
+}
+
+section#cadastro form button{
+	padding: .5rem 4rem;
+	width: 10%;
+	display: flex;
+	justify-content: center;
+	margin: 0.5rem auto;
+	background-color:rgba(34, 34, 34, 0.925);
+	color: rgb(0, 158, 158);
+	border-radius: 1rem;
+	font-weight: bolder;
+	border: 2px solid rgba(34, 34, 34, 0.925);
+	text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.726);
+	font-size: larger;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.432), inset 1px -1px 2px rgb(0, 0, 0);
+	transition: all 1ms ease-in-out;
+}
+
+section#cadastro form button:hover{
+	cursor: pointer;
+	animation: 1s 1ms ease infinite alternate btn-anime;
+}
+
+@keyframes btn-anime {
+
+	50%{
+		color: aqua;
+		border: 2px solid aqua;
+	}
+
+	80%{
+		transform: scale(110%);
+		color: aqua;
+		border: 2px solid aqua;
+	
+	}
+
+	100%{
+		transform: scale(110%);
+		color: aqua;
+		border: 2px solid aqua;
+	}
 }

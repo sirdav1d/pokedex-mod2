@@ -10,37 +10,44 @@
 </head>
 <body>
     <header>
-    <h1>Pokedex</h1>
+    <h1>Minha Pokedex</h1>
     </header>
 
     <main>
    <section id="card">
 <% pokedex.forEach((pokemon)=> { %> 
     <div class="card">
-            <img src= "<%= pokemon.imagem %>" alt="">
+            <img src= "<%= pokemon.image %>" alt="">
             <h2><%= pokemon.name %></h2>
             <p><%= pokemon.description %></p>
             <p><%= pokemon.type %></p>
-            <p><%= pokemon.abilities %></p>
+            <p id="abilities"><%= pokemon.abilities %></p>
     </div>
 <%  }) %>
    </section>
-   <section>
+   <section id="cadastro">
        <h2>
            Cadastre um novo Pokémon
        </h2>
-       <form action="">
-           <label for="name">Nome:</label>
-           <input type="text" id="name" name="name">
+       <form action="/add" method="POST">
+           <label for='name'>Nome:</label>
+           <input type="text" id="name" name='name'>
 
            <label for="description">Descrição:</label>
-           <input type="text" id="description" nome="description">
+           <input type='text' id="description" name='description'>
 
-        <label for="type">Tipo:</label>
-        <input type="text" id="type" nome="type">
+        <label for='type'>Tipo:</label>
+        <input type="text" id="type" nome='type'>
 
-        <label for="type">Habilidades:</label>
-        <input type="text" id="abilities" nome="abilities">
+        <label for="abilities">Habilidade:</label>
+        <input type="text" id="abilities" name='abilities'>
+
+        <label for='image'>Link da Imagem:</label>
+        <input type="text" id="image" name='image'>
+
+        <button id="btn-cadastrar" type="submit">
+            Cadastrar
+        </button>
        </form>
    </section>
 </main>
