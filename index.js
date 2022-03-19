@@ -43,7 +43,13 @@ app.post('/add', (req, res) => {
 	res.redirect('/');
 });
 
-app.put('/update')
+app.put('/update/:id', (req, res) => {
+	const id = +req.params.id;
+
+	const pokemon = pokedex.find(pokemon => pokemon.id === id);
+
+	res.render('index', {pokemon, pokedex});
+});
 
 app.listen(3000, () =>
 	console.log('Servidor rodando em http://localhost:3000'),

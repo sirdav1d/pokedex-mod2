@@ -22,6 +22,7 @@
             <p><%= pokemon.description %></p>
             <p>Tipo: <%= pokemon.type %></p>
             <p>Habilidade: <%= pokemon.abilities %></p>
+            <a href="/update/<%= pokemon.id%>">Editar</a>
     </div>
 <%  }) %>
    </section>
@@ -31,7 +32,7 @@
        </h2>
        <form action="/add" method="POST">
            <label for='name'>Nome:</label>
-           <input type="text" id="name" name='name'>
+           <input type="text" id="name" name='name' value="test">
 
            <label for="description">Descrição:</label>
            <input type='text' id="description" name='description'>
