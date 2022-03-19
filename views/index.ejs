@@ -17,11 +17,11 @@
    <section id="card">
 <% pokedex.forEach((pokemon)=> { %> 
     <div class="card">
-            <img src= "<%= pokemon.image %>" alt="">
+            <img src= "<%= pokemon.image %>" alt="pokémon">
             <h2><%= pokemon.name %></h2>
             <p><%= pokemon.description %></p>
             <p>Tipo: <%= pokemon.type %></p>
-            <p id="abilities">Habilidade: <%= pokemon.abilities %></p>
+            <p>Habilidade: <%= pokemon.abilities %></p>
     </div>
 <%  }) %>
    </section>
