@@ -22,14 +22,31 @@
 }
 
 header {
-	background-color: rgba(252, 40, 40, 0.918);
+	background: linear-gradient(-45deg, red, royalblue) no-repeat;
+	background-size: 300% 300%;
+	animation: 15s 1ms ease infinite alternate gradient;
 	box-shadow: 4px 2px 10px rgba(0, 0, 0, 0.795),
-		inset -2px -2px 2px rgba(0, 0, 0, 0.548);
+		inset -3px -3px 3px rgba(0, 0, 0, 0.548);
+	
+}
+
+@keyframes gradient {
+    0%{
+        background-position: 0% 50%;
+    }
+    
+    50%{
+        background-position: 100% 50%;
+    }
+
+    100%{
+        background-position: 0% 50%;
+    }
 }
 
 header h1 {
 	font-family: pokemon-hollow;
-	font-size: 3rem;
+	font-size: 4rem;
 	font-weight: bolder;
 	color: rgb(255, 217, 4);
 	text-align: center;
@@ -47,10 +64,14 @@ section#card {
 	align-items: center;
 }
 
+section#card h2{
+	align-self: center;
+	padding: 2rem 15rem;
+}
 section#card div.card {
 	color: whitesmoke;
 	width: 15rem;
-	height: 27rem;
+	height: 25rem;
 	box-shadow: 5px 5px 7px 1px rgba(0, 0, 0, 0.432),
 		inset -3px -3px 3px rgb(0, 0, 0);
 	padding: 1rem;
@@ -61,27 +82,30 @@ section#card div.card {
 }
 
 section#card div.card img {
-	height: 7rem;
+	height: 7em;
 	align-self: center;
-	filter: drop-shadow(3px 3px 10px rgba(0, 0, 0, 0.616));
+	filter: drop-shadow(5px 3px 6px rgb(0, 0, 0));
 	transition: all 500ms ease;
 }
 
 section#card div.card img:hover {
-	height: 12rem;
+	height: 14rem;
 	align-self: center;
+	transition: all 500ms ease;
 	filter: drop-shadow(5px 3px 6px rgb(0, 0, 0));
+	transform: translate(0,-5em);
+	margin-bottom: -6rem;
+	padding: 0;
 
 }
 
 
-section#card div.card h2 {
+section#card div.card h3 {
 	font-family: pokemon-hollow;
 	font-weight: bolder;
 	color: rgba(255, 50, 50, 0.918);
 	text-shadow: 6px 3px 3px rgb(0, 0, 0);
 	font-size: 2rem;
-	margin-top: -1rem;
 }
 
 section#card div.card p {
@@ -93,13 +117,12 @@ section#cadastro {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
-	padding: 5rem;
+	padding: 1.5rem 5rem;
 }
 
 section#cadastro h2 {
 	width: 100%;
 	text-align: center;
-	padding-bottom: 2rem;
 }
 
 section#cadastro form {
@@ -108,8 +131,8 @@ section#cadastro form {
 
 section#cadastro form input {
 	width: 100%;
-	padding: 0.5rem;
-	font-size: 1rem;
+	padding: 0.2rem;
+	font-size: .7rem;
 	outline: none;
 	border: solid 2px #05574a57;
 	margin-bottom: 1rem;
@@ -119,12 +142,12 @@ section#cadastro form label {
 	color: #064037;
 }
 
-section#cadastro form button {
-	padding: 0.5rem 4rem;
+section#cadastro form button.btnform {
+	padding: 0.2rem 4rem;
 	width: 10%;
 	display: flex;
 	justify-content: center;
-	margin: 0.5rem auto;
+	margin: 0.1rem auto;
 	background-color: rgba(34, 34, 34, 0.925);
 	color: rgb(0, 158, 158);
 	border-radius: 1rem;
@@ -136,7 +159,7 @@ section#cadastro form button {
 	opacity: 0.9;
 }
 
-section#cadastro form button:hover {
+section#cadastro form button.btnform:hover {
 	cursor: pointer;
 	animation: 0.7s 1ms ease-in-out forwards btn-anime;
 }

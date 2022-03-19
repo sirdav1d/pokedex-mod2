@@ -32,23 +32,31 @@ const pokedex = [
 	},
 ];
 
+let pokemon = undefined;
+
 app.get('/', (req, res) => {
-	res.render('index', { pokedex });
+	res.render('index', { pokedex, pokemon });
 });
 
 app.post('/add', (req, res) => {
-	const pokemon = req.body;
+	pokemon = req.body;
 	pokemon.id = pokedex.length + 1;
 	pokedex.push(pokemon);
 	res.redirect('/');
 });
 
-app.put('/update/:id', (req, res) => {
+app.get('/detalhes/:id', (req, res) => {
 	const id = +req.params.id;
+	pokemon = pokedex.find((pokemon) => pokemon.id === id);
+	res.redirect('/');
+});
 
-	const pokemon = pokedex.find(pokemon => pokemon.id === id);
-
-	res.render('index', {pokemon, pokedex});
+app.post('/update/:id', (req, res) => {
+	const id = +req.params.id;
+	const newPokemon = req.body;
+	pokedex[id-1] = newPokemon;
+	pokemon=undefined;
+	res.redirect('/');
 });
 
 app.listen(3000, () =>
