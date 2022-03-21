@@ -22,36 +22,39 @@
 }
 
 header {
-	background: linear-gradient(-45deg,rgb(39, 39, 39),rgb(39, 39, 39),rgb(148, 59, 59), rgb(255, 0, 0)) no-repeat;
+	background: linear-gradient(
+			-45deg,
+			rgb(39, 39, 39),
+			rgb(39, 39, 39),
+			rgb(148, 59, 59),
+			rgb(255, 0, 0)
+		)
+		no-repeat;
 	background-size: 400% 400%;
 	animation: 40s 1ms ease infinite alternate gradient;
 	box-shadow: 4px 2px 10px rgba(0, 0, 0, 0.795),
 		inset -3px -3px 3px rgba(0, 0, 0, 0.548);
-	
 }
 
 @keyframes gradient {
-    0%{
-        background-position: 0% 50%;
-    }
-    
-    50%{
-        background-position: 100% 50%;
-    }
+	0% {
+		background-position: 0% 50%;
+	}
 
-    100%{
-        background-position: 0% 50%;
-    }
+	50% {
+		background-position: 100% 50%;
+	}
+
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
-@keyframes flow { 
-
-   to {
-        transform: translate(.5rem, -3rem);
+@keyframes flow {
+	to {
+		transform: translate(0.5rem, -3rem);
 		height: 12rem;
-
- 
-  } 
+	}
 }
 
 header h1 {
@@ -74,7 +77,7 @@ section#card {
 	align-items: center;
 }
 
-section#card h2{
+section#card h2 {
 	align-self: center;
 	padding: 3rem 15rem;
 }
@@ -99,16 +102,13 @@ section#card div.card img {
 	padding: 3rem;
 	margin: -3rem;
 	transition: all 1s 1ms ease;
-
 }
 
 section#card div.card img:hover {
-	transform: translate(0rem,-2.5rem);
+	transform: translate(0rem, -2.5rem);
 	margin-bottom: -7rem;
 	animation: 1s 200ms ease-in-out forwards flow;
-
 }
-
 
 section#card div.card h3 {
 	font-family: pokemon-hollow;
@@ -121,7 +121,7 @@ section#card div.card h3 {
 
 section#card div.card p {
 	font-size: smaller;
-	margin-bottom: .5rem;
+	margin-bottom: 0.5rem;
 }
 
 section#cadastro {
@@ -144,7 +144,7 @@ section#cadastro form {
 section#cadastro form input {
 	width: 100%;
 	padding: 0.2rem;
-	font-size: .7rem;
+	font-size: 0.7rem;
 	outline: none;
 	border: solid 2px #05574a57;
 	margin-bottom: 1rem;
