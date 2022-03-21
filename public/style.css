@@ -19,21 +19,31 @@
 	padding: 0;
 	margin: 0;
 	font-family: pop, Verdana, Geneva, Tahoma, sans-serif;
+	scroll-behavior: smooth;
 }
 
-header {
-	background: linear-gradient(
-			-45deg,
-			rgb(39, 39, 39),
-			rgb(39, 39, 39),
-			rgb(148, 59, 59),
-			rgb(255, 0, 0)
-		)
-		no-repeat;
-	background-size: 400% 400%;
-	animation: 40s 1ms ease infinite alternate gradient;
-	box-shadow: 4px 2px 10px rgba(0, 0, 0, 0.795),
-		inset -3px -3px 3px rgba(0, 0, 0, 0.548);
+
+@keyframes btn-anime {
+	50% {
+		color: aqua;
+		border: 2px solid aqua;
+		opacity: 0.95;
+	}
+
+	80% {
+		transform: scale(110%);
+		color: aqua;
+		border: 2px solid aqua;
+	}
+
+	100% {
+		transform: scale(110%);
+		color: aqua;
+		border: 2px solid aqua;
+		opacity: 1;
+		text-shadow: 0px 0px 10px aqua;
+		box-shadow: 0px 0px 20px aqua;
+	}
 }
 
 @keyframes gradient {
@@ -57,18 +67,64 @@ header {
 	}
 }
 
-header h1 {
+header {
+	background: linear-gradient(
+			-45deg,
+			rgb(39, 39, 39),
+			rgb(39, 39, 39),
+			rgb(148, 59, 59),
+			rgb(255, 0, 0)
+		)
+		no-repeat;
+	background-size: 400% 400%;
+	animation: 40s 1ms ease infinite alternate gradient;
+	box-shadow: 4px 2px 10px rgba(0, 0, 0, 0.795),
+		inset 3px -3px 3px rgba(0, 0, 0, 0.548);
+		display: flex;
+		justify-content: space-around;
+		align-items: baseline;
+	position: fixed;
+	width: 100%;
+	
+}
+
+
+header h1 a {
 	font-family: pokemon-hollow;
-	font-size: 4rem;
+	font-size: 2.5rem;
 	font-weight: bolder;
 	color: aqua;
-	text-align: center;
+	text-shadow: 0px 0px 20px aqua;
+	text-decoration: none;
+}
+
+header nav ul{
+	display: flex;
+	justify-content: space-evenly;
+}
+
+header nav ul li{
+	list-style: none;
+	font-weight: bold;
+	color: rgb(0, 128, 128);
+}
+
+header nav ul li a {
+	color: rgb(1, 161, 161);
+	padding: 2rem;
+	text-decoration: none;
+	transition: all 1s;
+}
+
+header nav ul li a:hover{
+	color: aqua;
 	text-shadow: 0px 0px 20px aqua;
 }
 
 main {
-	margin: 0 10rem;
+	margin: 0 15rem;
 }
+
 
 section#card {
 	display: flex;
@@ -86,7 +142,7 @@ section#card div.card {
 	width: 15rem;
 	height: 22rem;
 	box-shadow: 5px 5px 7px 1px rgba(0, 0, 0, 0.432),
-		inset -3px -3px 3px rgb(0, 0, 0);
+		inset 3px -3px 3px rgb(0, 0, 0);
 	padding: 1rem;
 	background-color: rgba(34, 34, 34, 0.925);
 	margin-top: 2rem;
@@ -128,7 +184,7 @@ section#cadastro {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
-	padding: 1.5rem 5rem;
+	padding: 10rem 5rem;
 }
 
 section#cadastro h2 {
@@ -176,25 +232,3 @@ section#cadastro form button.btnform:hover {
 	animation: 0.7s 1ms ease-in-out forwards btn-anime;
 }
 
-@keyframes btn-anime {
-	50% {
-		color: aqua;
-		border: 2px solid aqua;
-		opacity: 0.95;
-	}
-
-	80% {
-		transform: scale(110%);
-		color: aqua;
-		border: 2px solid aqua;
-	}
-
-	100% {
-		transform: scale(110%);
-		color: aqua;
-		border: 2px solid aqua;
-		opacity: 1;
-		text-shadow: 0px 0px 10px aqua;
-		box-shadow: 0px 0px 20px aqua;
-	}
-}
