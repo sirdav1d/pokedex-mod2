@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Master Pokedex</title>
+    <title>Pokedex - Detalhes</title>
 </head>
 <body>
     <header>
@@ -45,10 +45,10 @@
         <section id="card">
             <h2>Lista de Pokémons</h2>
 <% pokedex.forEach((pokemon)=> { %> 
-    <div class="card">
+            <div class="card">
             <img src= "<%= pokemon.image %>" alt="pokémon">
             <h3><%= pokemon.name %></h3>
-            <a href="detalhes.ejs" method='get' <%= pokemon.id%> >Detalhes</a>
+            <a href="/detalhes/<%= pokemon.id%>" >Detalhes</a>
     </div>
 <%  }) %>
    </section>

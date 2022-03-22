@@ -5,26 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Master Pokedex</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/detalhes.css">
 </head>
 <body>
     <header>
         <h1> <a href="/">Pokédex</a> </h1>
-        <nav>
-            <ul>
-                <li> <a href="#cadastro">Cadastro</a></li>
-                <li><a href="#card">Pokémons</a></li>
-            </ul>
-        </nav>
     </header>
     <main>
         <section id="card">
-            <% pokedex.forEach((pokemon)=> { %>
                 <div class="card">
                     <img src="<%= pokemon.image %>" alt="pokémon">
-                    <h3>
+                    <h2>
                         <%= pokemon.name %>
-                    </h3>
+                    </h2>
                     <p><%= pokemon.description %></p>
                     <p>Tipo: <%= pokemon.type %></p>
                     <p>Habilidade: <%= pokemon.abilities %></p>

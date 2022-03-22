@@ -4,7 +4,7 @@ const express = require('express');
 const app = express();
 const path = require('path');
 
-app.set('view engine', 'ejs');
+app.set("view engine", "ejs");
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(express.urlencoded());
@@ -78,14 +78,14 @@ app.post('/add', (req, res) => {
 	pokemon = req.body;
 	pokemon.id = pokedex.length + 1;
 	pokedex.push(pokemon);
-	res.redirect('/');
+	res.redirect('/#cards');
 });
 
 app.get('/detalhes/:id', (req, res) => {
-	const pokemonAtual = pokedex.filter((element) => element.id == req.params.id);
-	res.render('detalhes.ejs', { pokemonAtual });
+	const id = req.params.id;
+	pokemon = pokedex[id-1];
+	res.render('detalhes', { pokemon });
 });
-
 const port = process.env.PORT || 3000;
 
 app.listen(port, () =>
