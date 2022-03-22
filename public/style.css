@@ -20,6 +20,7 @@
 	margin: 0;
 	font-family: pop, Verdana, Geneva, Tahoma, sans-serif;
 	scroll-behavior: smooth;
+	
 }
 
 
@@ -60,12 +61,7 @@
 	}
 }
 
-@keyframes flow {
-	to {
-		transform: translate(0.5rem, -3rem);
-		height: 12rem;
-	}
-}
+
 
 header {
 	background: linear-gradient(
@@ -81,21 +77,26 @@ header {
 	box-shadow: 4px 2px 10px rgba(0, 0, 0, 0.795),
 		inset 3px -3px 3px rgba(0, 0, 0, 0.548);
 		display: flex;
-		justify-content: space-around;
+		justify-content: space-evenly;
 		align-items: baseline;
+	width: 100vw;
+	height: 15%;
+	z-index: 99;
 	position: fixed;
-	width: 100%;
+
+
 	
 }
 
 
 header h1 a {
 	font-family: pokemon-hollow;
-	font-size: 2.5rem;
+	font-size: 2rem;
 	font-weight: bolder;
 	color: aqua;
 	text-shadow: 0px 0px 20px aqua;
 	text-decoration: none;
+	text-align: right;
 }
 
 header nav ul{
@@ -122,33 +123,53 @@ header nav ul li a:hover{
 }
 
 main {
-	margin: 0 15rem;
+	background-image: url(media/back-poke4.jpg);
+	background-size: 100vw;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	padding-top: 10rem;
+	z-index: 0;
+	
+	
 }
 
 
 section#card {
+	position: relative;
+	margin: 10rem 15rem;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 	align-items: center;
+	z-index: 98;
 }
 
 section#card h2 {
+	color: aqua;
+	text-shadow: 2px 2px 20px aqua;
 	align-self: center;
-	padding: 3rem 15rem;
+	padding: 1rem 15rem;
 }
 section#card div.card {
 	color: whitesmoke;
 	width: 15rem;
 	height: 22rem;
-	box-shadow: 5px 5px 7px 1px rgba(0, 0, 0, 0.432),
-		inset 3px -3px 3px rgb(0, 0, 0);
+	box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.651),
+		inset 1px -1px 4px rgba(0, 0, 0, 0.514);
 	padding: 1rem;
-	background-color: rgba(34, 34, 34, 0.925);
-	margin-top: 2rem;
+	background-color: rgb(255, 255, 255, 0.1);
+	backdrop-filter: blur(10px);
+	border: 1px rgb(255, 255, 255,0.1) solid;
+	border-radius: 2rem;
+	margin-top: 1rem;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	transition: 1s;
+}
+
+section#card div.card:hover{
+	transform: translateY(-2rem);
 }
 
 section#card div.card img {
@@ -157,20 +178,21 @@ section#card div.card img {
 	filter: drop-shadow(5px 3px 6px rgb(0, 0, 0));
 	padding: 3rem;
 	margin: -3rem;
-	transition: all 1s 1ms ease;
+	transition: all 1s;
 }
 
 section#card div.card img:hover {
-	transform: translate(0rem, -2.5rem);
+	transform: translateY(-3rem);
+	height: 12em;
 	margin-bottom: -7rem;
-	animation: 1s 200ms ease-in-out forwards flow;
+	
 }
 
 section#card div.card h3 {
 	font-family: pokemon-hollow;
 	font-weight: bolder;
 	color: rgba(255, 50, 50, 0.918);
-	text-shadow: 6px 3px 3px rgb(0, 0, 0);
+	text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.616);
 	font-size: 2rem;
 	margin-top: -1rem;
 }
@@ -183,18 +205,30 @@ section#card div.card p {
 section#cadastro {
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	flex-wrap: wrap;
-	padding: 10rem 5rem;
+	background-color: rgb(255, 255, 255, 0.1);
+	backdrop-filter: blur(10px);
+	border: 1px rgb(255, 255, 255,0.1) solid;
+	border-radius: 2rem;
+	box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.651),
+		inset 1px -1px 4px rgba(0, 0, 0, 0.514);
+	width: 25rem;
+	height: 30rem;
+	margin: auto;
+	
 }
 
 section#cadastro h2 {
+	padding: 1rem;
 	width: 100%;
 	text-align: center;
-	color: #055749;
+	color: aqua;
+	text-shadow: 4px 4px 10px black;
 }
 
 section#cadastro form {
-	width: 50%;
+	width: 75%;
 }
 
 section#cadastro form input {
@@ -203,11 +237,14 @@ section#cadastro form input {
 	font-size: 0.7rem;
 	outline: none;
 	border: solid 2px #05574a57;
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.664);
 	margin-bottom: 1rem;
 }
 
 section#cadastro form label {
-	color: #064037;
+	color: aqua;
+	text-shadow: 4px 2px 4px black;
+	font-weight: 500;
 }
 
 section#cadastro form button.btnform {
