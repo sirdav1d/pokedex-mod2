@@ -22,13 +22,33 @@ const pokedex = [
 	},
 	{
 		id: 2,
-		name: 'Vaporeon',
+		name: 'Bulbasaur',
 		description:
-			'When Vaporeon’s fins begin to vibrate, it is a sign that rain will come within a few hours.',
-		type: 'Water',
-		abilities: 'Water Absorb',
+			'There is a plant seed on its back right from the day this Pokémon is born. The seed slowly grows larger.',
+		type: 'Grass',
+		abilities: 'Overgrow',
 		image:
-			'https://www.pkparaiso.com/imagenes/espada_escudo/sprites/animados-gigante/vaporeon.gif',
+			'https://www.pkparaiso.com/imagenes/espada_escudo/sprites/animados-gigante/bulbasaur.gif',
+	},
+	{
+		id: 3,
+		name: 'Squirtle',
+		description:
+			'When it retracts its long neck into its shell, it squirts out water with vigorous force.',
+		type: 'Water',
+		abilities: 'Torrent',
+		image:
+			'https://www.pkparaiso.com/imagenes/espada_escudo/sprites/animados-gigante/squirtle.gif',
+	},
+	{
+		id: 4,
+		name: 'Pikachu',
+		description:
+			'Pikachu that can generate powerful electricity have cheek sacs that are extra soft and super stretchy.',
+		type: 'Electric',
+		abilities: 'Static',
+		image:
+			'https://www.pkparaiso.com/imagenes/espada_escudo/sprites/animados-gigante/pikachu-f.gif',
 	},
 ];
 
@@ -51,13 +71,6 @@ app.get('/detalhes/:id', (req, res) => {
 	res.redirect('/');
 });
 
-app.post('/update/:id', (req, res) => {
-	const id = +req.params.id;
-	const newPokemon = req.body;
-	pokedex[id-1] = newPokemon;
-	pokemon=undefined;
-	res.redirect('/');
-});
 
 const port = process.env.PORT || 3000;
 

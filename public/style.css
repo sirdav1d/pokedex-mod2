@@ -61,7 +61,9 @@
 	}
 }
 
-
+body{
+	background-color: rgb(0, 0, 0);
+}
 
 header {
 	background: linear-gradient(
@@ -73,7 +75,7 @@ header {
 		)
 		no-repeat;
 	background-size: 400% 400%;
-	animation: 40s 1ms ease infinite alternate gradient;
+	animation: 45s 1ms ease-in-out infinite alternate gradient;
 	box-shadow: 4px 2px 10px rgba(0, 0, 0, 0.795),
 		inset 3px -3px 3px rgba(0, 0, 0, 0.548);
 		display: flex;
@@ -105,6 +107,7 @@ header nav ul{
 }
 
 header nav ul li{
+	font-size: large;
 	list-style: none;
 	font-weight: bold;
 	color: rgb(0, 128, 128);
@@ -119,15 +122,16 @@ header nav ul li a {
 
 header nav ul li a:hover{
 	color: aqua;
-	text-shadow: 0px 0px 20px aqua;
+	text-shadow: 2px 2px 8px aqua;
 }
 
 main {
-	background-image: url(media/back-poke4.jpg);
-	background-size: 100vw;
+	background-image: url(media/back-poke.jpg);
+	background-size: 100%;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	padding-top: 10rem;
+	padding-bottom: 2rem;
 	z-index: 0;
 	
 	
@@ -142,19 +146,21 @@ section#card {
 	justify-content: space-evenly;
 	align-items: center;
 	z-index: 98;
-	scroll-margin: 5rem;
+	scroll-margin: 6rem;
 }
 
 section#card h2 {
-	color: aqua;
-	text-shadow: 2px 2px 20px aqua;
+	color: red;
+	text-shadow: 2px 2px 10px rgb(0, 0, 0);
+	font-size: 2rem;
+	font-weight: 900;
 	align-self: center;
-	padding: 1rem 15rem;
+	padding: 2rem 10rem;
 }
 section#card div.card {
 	color: whitesmoke;
-	width: 15rem;
-	height: 22rem;
+	width: 10rem;
+	height: 17rem;
 	box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.651),
 		inset 1px -1px 4px rgba(0, 0, 0, 0.514);
 	padding: 1rem;
@@ -174,26 +180,26 @@ section#card div.card:hover{
 }
 
 section#card div.card img {
-	height: 7em;
+	height: 5em;
 	align-self: center;
-	filter: drop-shadow(5px 3px 6px rgb(0, 0, 0));
-	padding: 3rem;
-	margin: -3rem;
+	filter: drop-shadow(2px 2px 6px rgba(0, 0, 0, 0.692));
+	padding: 1rem;
 	transition: all 1s;
 }
 
 section#card div.card img:hover {
 	transform: translateY(-3rem);
-	height: 12em;
-	margin-bottom: -7rem;
+	align-self: center;
+	height: 10em;
+	margin-bottom: -5rem;
 	
 }
 
 section#card div.card h3 {
 	font-family: pokemon-hollow;
 	font-weight: bolder;
-	color: rgba(255, 50, 50, 0.918);
-	text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.616);
+	color: rgb(250, 0, 0);
+	text-shadow: 2px 2px 20px rgb(0, 0, 0);
 	font-size: 2rem;
 	margin-top: -1rem;
 }
@@ -201,6 +207,21 @@ section#card div.card h3 {
 section#card div.card p {
 	font-size: smaller;
 	margin-bottom: 0.5rem;
+}
+
+section#card div.card a{
+	text-decoration: none;
+	color: whitesmoke;
+	font-weight: bolder;
+	padding: 1rem;
+	text-shadow: 2px 2px 8px black;
+}
+
+section#card div.card a:hover{
+	color: aqua;
+	text-shadow: 2px 2px 8px aqua;
+
+	
 }
 
 section#cadastro {
@@ -272,12 +293,12 @@ section#cadastro form button.btnform:hover {
 }
 
 footer{
-	background-color: rgba(0, 0, 0, 0.842);
+	background-image: url(media/back-poke5.jpg);
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	color: whitesmoke;
-	padding: 1rem;
+	padding: 2rem;
 	bottom: 1px;
 	text-shadow: 2px 2px 8px black;
 }
