@@ -78,7 +78,7 @@ app.post('/add', (req, res) => {
 	pokemon = req.body;
 	pokemon.id = pokedex.length + 1;
 	pokedex.push(pokemon);
-	res.redirect('/#cards');
+	res.redirect('/#card');
 });
 
 app.get('/detalhes/:id', (req, res) => {
