@@ -126,7 +126,7 @@ header nav ul li a:hover{
 }
 
 main {
-	background-image: url(media/back-poke.jpg);
+	background-image: url(media/back-poke4.jpg);
 	background-size: 100%;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
@@ -155,7 +155,7 @@ section#card h2 {
 	font-size: 2rem;
 	font-weight: 900;
 	align-self: center;
-	padding: 2rem 10rem;
+	padding: 2rem 14rem;
 }
 section#card div.card {
 	color: whitesmoke;
@@ -213,8 +213,9 @@ section#card div.card a{
 	text-decoration: none;
 	color: whitesmoke;
 	font-weight: bolder;
-	padding: 1rem;
+	padding: 2rem;
 	text-shadow: 2px 2px 8px black;
+	transition: all 1s;
 }
 
 section#card div.card a:hover{
@@ -293,12 +294,12 @@ section#cadastro form button.btnform:hover {
 }
 
 footer{
-	background-image: url(media/back-poke5.jpg);
+	background-image: url(media/back-poke4.jpg);
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	color: whitesmoke;
-	padding: 2rem;
+	padding: 1.5rem;
 	bottom: 1px;
 	text-shadow: 2px 2px 8px black;
 }

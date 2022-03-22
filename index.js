@@ -12,41 +12,57 @@ app.use(express.urlencoded());
 const pokedex = [
 	{
 		id: 1,
+		numero: 4,
+		altura: '0.6 m',
+		peso: '8.5 kg',
+		category: 'Lagarto',
 		name: 'Charmander',
 		description:
-			'It has a preference for hot things. When it rains, steam is said to spout from the tip of its tail.',
-		type: 'Fire',
-		abilities: 'Blaze',
+			'Tem preferência por coisas quentes. Quando chove, diz-se que o vapor jorra da ponta de sua cauda.',
+		type: 'Fogo',
+		abilities: 'Combustão',
 		image:
 			'https://www.pkparaiso.com/imagenes/espada_escudo/sprites/animados-gigante/charmander.gif',
 	},
 	{
 		id: 2,
+		numero: 1,
+		altura: '0.7 m',
+		peso: '6.9 kg',
+		category: 'Semente',
 		name: 'Bulbasaur',
 		description:
-			'There is a plant seed on its back right from the day this Pokémon is born. The seed slowly grows larger.',
-		type: 'Grass',
-		abilities: 'Overgrow',
+			'Há uma semente de planta nas costas desde o dia em que este Pokémon nasce. A semente cresce lentamente.',
+		type: 'Grama',
+		abilities: 'Chicote de Vinha',
 		image:
 			'https://www.pkparaiso.com/imagenes/espada_escudo/sprites/animados-gigante/bulbasaur.gif',
 	},
 	{
 		id: 3,
+		numero: 7,
+		altura: '0.5 m',
+		peso: '9.0 kg',
+		category: 'Tararuga',
 		name: 'Squirtle',
 		description:
-			'When it retracts its long neck into its shell, it squirts out water with vigorous force.',
-		type: 'Water',
-		abilities: 'Torrent',
+			'Quando retrai seu longo pescoço em sua concha, esguicha água com força vigorosa.',
+		type: 'Água',
+		abilities: 'Jato de água',
 		image:
 			'https://www.pkparaiso.com/imagenes/espada_escudo/sprites/animados-gigante/squirtle.gif',
 	},
 	{
 		id: 4,
+		numero: 25,
+		altura: '0.4 m',
+		peso: '6.0 kg',
+		category: 'Rato',
 		name: 'Pikachu',
 		description:
-			'Pikachu that can generate powerful electricity have cheek sacs that are extra soft and super stretchy.',
-		type: 'Electric',
-		abilities: 'Static',
+			'Pikachu que pode gerar eletricidade poderosa tem bolsas nas bochechas que são extra macias e super elásticas.',
+		type: 'Elétrico',
+		abilities: 'Choque do trovão',
 		image:
 			'https://www.pkparaiso.com/imagenes/espada_escudo/sprites/animados-gigante/pikachu-f.gif',
 	},
@@ -66,14 +82,12 @@ app.post('/add', (req, res) => {
 });
 
 app.get('/detalhes/:id', (req, res) => {
-	const id = +req.params.id;
-	pokemon = pokedex.find((pokemon) => pokemon.id === id);
-	res.redirect('/');
+	const pokemonAtual = pokedex.filter((element) => element.id == req.params.id);
+	res.render('detalhes.ejs', { pokemonAtual });
 });
-
 
 const port = process.env.PORT || 3000;
 
 app.listen(port, () =>
-	console.log('Servidor rodando em http://localhost:3000'),
+	console.log(`Servidor rodando em ${port}`),
 );
