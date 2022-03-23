@@ -188,7 +188,7 @@ section#card div.card div#container{
 	background-color: rgba(31, 31, 31, 0.568);
 	backdrop-filter: blur(10px);
 	border: 1px rgb(255, 255, 255,0.1) solid;
-	box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.651),
+	box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.651),
 		inset 1px -1px 4px rgba(0, 0, 0, 0.514);
 	border-radius: 1rem;
 
