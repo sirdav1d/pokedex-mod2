@@ -195,7 +195,7 @@ section#card div.card div#container{
 }
 
 section#card div.card div#container p{
-	padding: .6rem;
+	padding: .5rem;
 }
 
 footer{
@@ -218,5 +218,5 @@ footer a{
 
 footer a:hover{
 	color:aqua;
-	text-shadow: 2px 2px 8px aqua;
+	text-shadow: 1px 1px 6px aqua;
 }

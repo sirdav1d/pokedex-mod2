@@ -43,7 +43,7 @@ const pokedex = [
 		numero: 7,
 		altura: '0.5 m',
 		peso: '9.0 kg',
-		category: 'Tararuga',
+		category:'Tartaruga',
 		name: 'Squirtle',
 		description:
 			'Quando retrai seu longo pescoço em sua concha, esguicha água com força vigorosa.',

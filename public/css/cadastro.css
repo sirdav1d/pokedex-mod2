@@ -78,9 +78,6 @@
 	}
 }
 
-body{
-	background-color: rgb(0, 0, 0);
-}
 
 header {
 	background: linear-gradient(
@@ -153,11 +150,11 @@ header nav ul li a:hover{
 }
 
 main {
-	background-image: url(../assets/media/back-poke4.jpg);
-	background-size: 100%;
+	background-image: url(../assets/media/poke2.jpg);
+	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	padding-top: 5.5rem;
+	padding-top: 5.3rem;
 	padding-bottom: 2rem;
 	z-index: 0;
 	
@@ -173,24 +170,24 @@ section#cadastro {
 	background-color: rgb(255, 255, 255, 0.1);
 	backdrop-filter: blur(10px);
 	border: 1px rgb(255, 255, 255,0.1) solid;
-	border-radius: 2rem;
+	border-radius: 1.5rem;
 	box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.651),
 		inset 1px -1px 4px rgba(0, 0, 0, 0.514);
 	width: 25rem;
-	height: 34rem;
+	height: 34.5rem;
 	margin: auto;
-	scroll-margin: 9rem;
 	
 }
 
 section#cadastro h2 {
 	padding: 1.6rem;
 	margin: -1.5rem 0rem -1.5rem 0rem;
-	font-size: 1.1rem;
+	font-size: 1.4rem;
+	font-weight: 900;
 	width: 100%;
 	text-align: center;
-	color: aqua;
-	text-shadow: 4px 4px 10px black;
+	color: rgb(248, 0, 0);
+	text-shadow: 4px 2px 10px rgb(201, 50, 50);
 }
 
 section#cadastro form {
@@ -199,20 +196,23 @@ section#cadastro form {
 
 section#cadastro form input {
 	width: 100%;
-	padding: 0.2rem;
-	font-size: 0.4rem;
+	font-size: 0.rem;
 	outline: none;
 	border: solid 2px #05574a57;
 	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.664);
-	border-radius: .5rem;
+	border-radius: .4rem;
 	font-family: pop, sans-serif;
 }
 
 section#cadastro form label {
-	color: aqua;
-	text-shadow: 4px 2px 2px black;
-	font-size: smaller;
-	font-weight: 300;
+	color: rgb(255, 0, 0);
+	text-shadow: 4px 2px 6px rgba(255, 0, 0, 0.842);
+	font-size: 1rem;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
+	margin-top: 1rem;
+	
 }
 
 section#cadastro form button.btnform {
@@ -244,7 +244,18 @@ section#cadastro form button.btnform:hover {
 
 
 footer{
-	background-image: url(../assets/media/back-poke4.jpg);
+	background: linear-gradient(
+			-45deg,
+			rgb(14, 14, 14),
+			rgb(39, 39, 39),
+			rgb(175, 45, 45),
+			rgba(255, 0, 0, 0.932)
+		)
+		no-repeat;
+	background-size: 400% 400%;
+	animation: 45s 1ms ease-in-out infinite alternate gradient;
+	box-shadow: 4px 2px 10px rgba(0, 0, 0, 0.795),
+		inset 3px -2px 5px rgb(0, 0, 0);
 	display: flex;
 	justify-content: center;
 	align-items: center;
