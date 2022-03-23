@@ -86,6 +86,12 @@ app.get('/detalhes/:id', (req, res) => {
 	pokemon = pokedex[id-1];
 	res.render('detalhes', { pokemon });
 });
+
+app.get('/cadastro', (req, res) =>{
+	res.render('cadastro')
+});
+
+
 const port = process.env.PORT || 3000;
 
 app.listen(port, () =>

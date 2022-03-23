@@ -197,3 +197,26 @@ section#card div.card div#container{
 section#card div.card div#container p{
 	padding: .6rem;
 }
+
+footer{
+	background-image: url(../assets/media/back-detalhes.jpg);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: whitesmoke;
+	padding: 1rem;
+	bottom: 1px;
+	text-shadow: 2px 2px 8px black;
+}
+
+footer a{
+	text-decoration: none;
+	color: whitesmoke;
+	font-weight: bold;
+	transition: all 1s;
+}
+
+footer a:hover{
+	color:aqua;
+	text-shadow: 2px 2px 8px aqua;
+}

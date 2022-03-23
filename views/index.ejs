@@ -5,55 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href=".\css\style.css">
-    <title>Master Pokedex</title>
+    <link rel="shortcut icon" href = "https://img.icons8.com/color/48/000000/superball.png" type="image/x-icon">
+    <title>Master Pokédex</title>
 </head>
 <body>
     <header>
     <h1> <a href="/">Pokédex</a> </h1>
     <nav>
         <ul>
-            <li> <a href="#cadastro">Cadastro</a></li>
+            <li> <a href="/cadastro">Cadastro</a></li>
             <li><a href="#card">Pokémons</a></li>
         </ul>
     </nav>
     </header>
     <main>
-        <section id="cadastro">
-                <h2>
-                    Cadastre um novo Pokémon
-                </h2>
-                <form action="/add" method="POST">
-        
-                    <label for='name'>Nome:</label>
-                    <input type="text" id="name" name='name'>
-
-                    <label for='category'>Categoria:</label>
-                    <input type="text" id="category" name='category'>
-
-                    <label for='peso'>Peso:</label>
-                    <input type="text" id="peso" name='peso'>
-
-                    <label for='altura'>Altura:</label>
-                    <input type="text" id="altura" name='altura'>
-
-                    <label for='numero'>Posição oficial:</label>
-                    <input type="text" id="numero" name='numero'>
-        
-                    <label for="description">Descrição:</label>
-                    <input type='text' id="description" name='description'>
-        
-                    <label for='type'>Tipo:</label>
-                    <input type="text" id="type" name='type'>
-        
-                    <label for="abilities">Habilidade:</label>
-                    <input type="text" id="abilities" name='abilities'>
-        
-                    <label for='image'>Link da Imagem:</label>
-                    <input type="text" id="image" name='image'>
-        
-                    <button class="btnform" type="submit">Cadastrar</button>
-                </form>
-        </section>
+       
         <section id="card">
             <h2>Pokémons</h2>
 <% pokedex.forEach((pokemon)=> { %> 
