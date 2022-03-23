@@ -121,7 +121,7 @@ section#card {
 section#card div.card {
 	color: whitesmoke;
 	width: 40rem;
-	height: 25rem;
+	height: 26rem;
 	box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.651),
 		inset 1px -1px 4px rgba(0, 0, 0, 0.514);
 	padding: 1rem;
@@ -131,6 +131,7 @@ section#card div.card {
 	border-radius: 2rem;
 	margin-top: 1rem;
 	display: flex;
+	text-shadow: 4px 2px 3px black;
 	flex-direction: column;
 	align-items: center;
 	transition: 1s;
@@ -152,6 +153,12 @@ section#card div.card img:hover {
 	
 }
 
+section#card div.card p#descrip{
+	text-align: center;
+	margin: 0 2rem;
+	font-size: larger;
+}
+
 section#card h2 {
 	color: red;
 	text-shadow: 2px 2px 10px rgb(0, 0, 0);
@@ -169,4 +176,24 @@ section#card div.card p#num{
 	font-size: 1.2rem;
 	font-weight: bolder;
 	color: red;
+}
+
+section#card div.card div#container{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 2rem 7rem;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(31, 31, 31, 0.568);
+	backdrop-filter: blur(10px);
+	border: 1px rgb(255, 255, 255,0.1) solid;
+	box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.651),
+		inset 1px -1px 4px rgba(0, 0, 0, 0.514);
+	border-radius: 1rem;
+
+}
+
+section#card div.card div#container p{
+	padding: .6rem;
 }

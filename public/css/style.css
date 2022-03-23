@@ -164,7 +164,6 @@ main {
 	
 }
 
-
 section#card {
 	position: relative;
 	margin: 10rem 15rem;
@@ -173,16 +172,17 @@ section#card {
 	justify-content: space-evenly;
 	align-items: center;
 	z-index: 98;
-	scroll-margin: 6rem;
+	scroll-margin: 3rem;
 }
 
 section#card h2 {
 	color: rgb(255, 40, 40);
 	text-shadow: 2px 2px 10px rgb(0, 0, 0);
-	font-size: 2rem;
-	font-weight: 900;
+	font-size: 4rem;
+	font-family: pokemon-solid;
+	font-weight:100;
 	align-self: center;
-	padding: 2rem 14rem;
+	padding: 0rem 20rem;
 }
 section#card div.card {
 	color: whitesmoke;

@@ -15,12 +15,16 @@
         <section id="card">
                 <div class="card">
                     <p id="num">Posição oficial: <%= pokemon.numero %></p>
+
                     <img src="<%= pokemon.image %>" alt="pokémon">
+
                     <h2>
                         <%= pokemon.name %>
                     </h2>
-                    <p><%= pokemon.description %></p>
 
+                    <p id="descrip"><%= pokemon.description %></p>
+
+                    <div id="container">
                     <p>Categoria: <%= pokemon.category %>
                     </p>
                     <p>Peso: <%= pokemon.peso %>
@@ -32,7 +36,8 @@
                     <p>Tipo: <%= pokemon.type %></p>
 
                     <p>Habilidade: <%= pokemon.abilities %></p>
-                </div>
+                    </div>
+            </div>
     </main>
     <footer>
         <p>All rights reserved <a target="_blank" href="https://github.com/sirdav1d">David D. Dos Santos &copy;</a></p>
