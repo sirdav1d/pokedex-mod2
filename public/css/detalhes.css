@@ -58,15 +58,6 @@
 	}
 }
 
-body{
-	background-image: url(../assets/media/back-detalhes.jpg);
-	background-repeat: no-repeat;
-	background-size: auto;
-	background-attachment: fixed;
-	background-position: 50%;
-    color: azure;
-}
-
 header {
 	background: linear-gradient(
 			-45deg,
@@ -81,10 +72,8 @@ header {
 	box-shadow: 4px 2px 10px rgba(0, 0, 0, 0.795),
 		inset 3px -3px 3px rgba(0, 0, 0, 0.548);
 	width: 100vw;
-	height: 20%;
 	z-index: 99;
 	text-align: center;
-    top: 0px;
 	position: fixed;
 
 }
@@ -92,12 +81,12 @@ header {
 
 header h1 a {
 	font-family: pokemon-hollow;
-	font-size: 3rem;
+	font-size: 2.5rem;
 	font-weight: bolder;
 	color: rgb(1, 161, 161);
 	text-shadow:2px 2px 10px rgba(0, 0, 0, 0.384);
 	text-decoration: none;
-	text-align: right;
+	top: 0px;
 	transition: all 1s ease;
 }
 
@@ -106,9 +95,19 @@ color: aqua;
 	text-shadow: 2px 2px 8px aqua;
 }
 
+main{
+	background-image: url(../assets/media/back-detalhes.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	display: flex;
+	justify-content: center;
+	padding: 10%;
+}
+
 section#card {
 	position: relative;
-	margin: 10rem 15rem;
+	margin: 0 15rem;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
@@ -155,7 +154,7 @@ section#card div.card img:hover {
 
 section#card div.card p#descrip{
 	text-align: center;
-	margin: 0 2rem;
+	margin: .8rem 2rem 0 0;
 	font-size: larger;
 }
 
@@ -163,11 +162,11 @@ section#card h2 {
 	color: red;
 	text-shadow: 2px 2px 10px rgb(0, 0, 0);
     font-family: pokemon-hollow;
-	font-size: 2.5rem;
+	font-size: 3.5rem;
 	font-weight: 900;
 	align-self: center;
 	padding: 0;
-    margin-bottom: -1rem;
+    margin: -1.7rem;
 }
 
 section#card div.card p#num{
@@ -182,30 +181,51 @@ section#card div.card div#container{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	margin: 2rem 7rem;
+	margin: 1rem 7rem;
 	justify-content: center;
 	align-items: center;
-	background-color: rgba(31, 31, 31, 0.568);
+	background-color: rgba(0, 0, 0, 0.144);
 	backdrop-filter: blur(10px);
 	border: 1px rgb(255, 255, 255,0.1) solid;
 	box-shadow: 3px 2px 5px rgba(0, 0, 0, 0.651),
 		inset 1px -1px 4px rgba(0, 0, 0, 0.514);
 	border-radius: 1rem;
+	
+
 
 }
 
 section#card div.card div#container p{
-	padding: .5rem;
+	padding: 0 .6rem;
+	color: rgba(255, 255, 255, 0.904);
+	font-weight: bolder;
+	text-shadow: 2px 2px 6px rgb(0, 0, 0);
+	font-size: larger;
+	transition: all .8s ease;
+}
+section#card div.card div#container p:hover{
+	color: aqua;
 }
 
 footer{
-	background-image: url(../assets/media/back-detalhes.jpg);
+	background: linear-gradient(
+			-45deg,
+			rgb(14, 14, 14),
+			rgb(39, 39, 39),
+			rgb(175, 45, 45),
+			rgba(255, 0, 0, 0.932)
+		)
+		no-repeat;
+	background-size: 400% 400%;
+	animation: 45s 1ms ease-in-out infinite alternate gradient;
+	box-shadow: 4px 2px 10px rgba(0, 0, 0, 0.795),
+		inset 3px 3px 5px rgb(0, 0, 0);
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	color: whitesmoke;
-	padding: 1rem;
-	bottom: 1px;
+	padding: 1.5rem;
+	bottom: 0px;
 	text-shadow: 2px 2px 8px black;
 }
 

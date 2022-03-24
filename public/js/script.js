@@ -1,5 +1,5 @@
 const btn = document.querySelector(".btnform")
 
-    btn.addEventListener('click', function cadastrado () {
+    btn.addEventListener('click', function () {
 			window.alert('Pokémon cadastrado com sucesso!')
     });

@@ -96,10 +96,10 @@ header {
 		justify-content: space-evenly;
 		align-items: center;
 	width: 100vw;
-	height: 12%;
+	height: 15%;
 	z-index: 99;
 	position: fixed;
-	margin-top: -.5rem;
+
 
 
 	
@@ -108,7 +108,7 @@ header {
 
 header h1 a {
 	font-family: pokemon-hollow;
-	font-size: 2rem;
+	font-size: 2.5rem;
 	font-weight: bolder;
 	color: rgb(1, 161, 161);
 	text-shadow:2px 2px 10px rgba(0, 0, 0, 0.384);
@@ -154,9 +154,10 @@ main {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	padding-top: 5.3rem;
-	padding-bottom: 2rem;
-	z-index: 0;
+	display: flex;
+	justify-content: center;
+	padding: 10%;
+
 	
 	
 }
@@ -182,12 +183,12 @@ section#cadastro {
 section#cadastro h2 {
 	padding: 1.6rem;
 	margin: -1.5rem 0rem -1.5rem 0rem;
-	font-size: 1.4rem;
+	font-size: 1.5rem;
 	font-weight: 900;
 	width: 100%;
 	text-align: center;
-	color: rgb(248, 0, 0);
-	text-shadow: 4px 2px 10px rgb(201, 50, 50);
+	color: rgb(240, 0, 248);
+	text-shadow: 4px 3px 5px rgb(0, 0, 0);
 }
 
 section#cadastro form {
@@ -205,10 +206,9 @@ section#cadastro form input {
 }
 
 section#cadastro form label {
-	color: rgb(255, 0, 0);
-	text-shadow: 4px 2px 6px rgba(255, 0, 0, 0.842);
-	font-size: 1rem;
-	font-weight: bold;
+	color: whitesmoke;
+	text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.637);
+	font-size: .9rem;
 	margin: 0;
 	padding: 0;
 	margin-top: 1rem;
@@ -255,13 +255,13 @@ footer{
 	background-size: 400% 400%;
 	animation: 45s 1ms ease-in-out infinite alternate gradient;
 	box-shadow: 4px 2px 10px rgba(0, 0, 0, 0.795),
-		inset 3px -2px 5px rgb(0, 0, 0);
+		inset 3px 3px 5px rgb(0, 0, 0);
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	color: whitesmoke;
 	padding: 1.5rem;
-	bottom: 1px;
+	bottom: 0px;
 	text-shadow: 2px 2px 8px black;
 }
 
