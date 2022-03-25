@@ -14,6 +14,60 @@
  src: url(../assets/fonts/Poppins/Poppins-Regular.ttf);
 } 
 
+@media(max-width:1500px){
+	#inith{
+		font-size: 4rem;
+	}
+	main{
+		height: 80vh;
+	}
+
+
+}
+
+@media(max-width:980px){
+	header{
+		padding: 0;
+		margin: 0;
+		top:0px
+	}
+
+	main{
+		height: 90vh;
+		background-size: 25%;
+		background-position: center;
+	}
+}
+
+@media(max-width:650px) {
+
+	header{
+		padding: 0;
+		margin: 0;
+		top:0px
+	}
+
+	header h1 a{
+		font-size: 1rem;
+	}
+	main{
+		background-position: center;
+		background-size: 5%;
+		padding: 20rem 0;
+		margin-top: 4rem;
+		height:100vh
+	}
+
+	section#cadastro{
+		padding: 1.5rem 0rem
+	}
+
+	footer{
+		padding: 1rem;
+		font-size: small;
+	}
+}
+
 * {
 	padding: 0;
 	margin: 0;
@@ -21,6 +75,8 @@
 	scroll-behavior: smooth;
 	
 }
+
+
 
 @keyframes btn-anime2 {
 	50% {

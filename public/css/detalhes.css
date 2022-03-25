@@ -20,6 +20,19 @@
 	scroll-behavior: smooth;
 }
 
+@media(max-width:1500px){
+	#initd{
+		font-size:4.5rem;
+	}
+	main{
+		height: 100vh;
+	}
+
+	}
+
+
+
+
 
 @keyframes btn-anime {
 	50% {
@@ -171,10 +184,10 @@ section#card h2 {
 
 section#card div.card p#num{
 	align-self: flex-end;
-	text-shadow: 2px 2px 4px black;
+	text-shadow: 4px 3px 5px black;
 	font-size: 1.2rem;
-	font-weight: bolder;
-	color: red;
+	font-weight:900;
+	color: rgb(251, 255, 0);
 }
 
 section#card div.card div#container{
