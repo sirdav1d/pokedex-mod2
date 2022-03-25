@@ -13,32 +13,19 @@
         <h1> <a id="initd" href="/">Pokédex</a> </h1>
     </header>
     <main>
-        <section id="card">
-                <div class="card">
+        <section class="card">
                     <p id="num">Posição oficial: <%= pokemon.numero %></p>
-
                     <img src="<%= pokemon.image %>" alt="pokémon">
-
-                    <h2>
-                        <%= pokemon.name %>
-                    </h2>
-
+                    <h2><%= pokemon.name %></h2>
                     <p id="descrip"><%= pokemon.description %></p>
-
-                    <div id="container">
-                    <p>Categoria: <%= pokemon.category %>
-                    </p>
-                    <p>Peso: <%= pokemon.peso %>
-                    </p>
-
-                    <p>Altura: <%= pokemon.altura %>
-                    </p>
-                   
+                <div id="container">
+                    <p>Categoria: <%= pokemon.category %></p>
+                    <p>Peso: <%= pokemon.peso %></p>
+                    <p>Altura: <%= pokemon.altura %></p>                
                     <p>Tipo: <%= pokemon.type %></p>
-
                     <p>Habilidade: <%= pokemon.abilities %></p>
-                    </div>
-            </div>
+                </div>
+        </section>
     </main>
     <footer>
         <p>All rights reserved <a target="_blank" href="https://github.com/sirdav1d">David D. Dos Santos &copy;</a></p>

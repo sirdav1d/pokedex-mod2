@@ -87,17 +87,18 @@
 @media(max-width:980px){
 	body{
 		overflow-x: hidden;
+		margin: 0;
+		padding: 0;
 	}
-	#init{
-		padding: .2rem;
+	body header{
+	height: 10%;
 	}
-
-	#init h1 a{
-		font-size: 3rem;
+	body header h1 a{
+		font-size: 2rem;
 	}
 	#backcard{
 		background-position: cover;
-		padding: 20%;
+		padding: 10%;
 		background-position: center;
 	}
 	section#card div.card{
@@ -112,9 +113,10 @@
 	#init{
 		margin-bottom: 2rem;
 		padding: 0;
+		height: 10%;
 	}
 	#init h1 a{
-		font-size: 2rem;
+		font-size: 1.5rem;
 	}
 	#backcard{
 		background-position: cover;
