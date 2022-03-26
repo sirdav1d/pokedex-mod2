@@ -115,7 +115,7 @@
 	}
 }
 
-@media(max-width:580px) {
+@media(max-width:650px) {
 	body header{
 	height:10vmax;
 }
