@@ -15,49 +15,32 @@
 } 
 
 @media(max-width:820px){
-	body header{
-		padding: 0;
-		margin: 0;
-		top:0px;
-		height:10%;
-		
+	body main section#cadastro{
+		margin: auto;
+		height: 60vmax;
+		width: 40vmax;
 	}
-	body header h1 a#inith {
-		font-size: 3rem;
-	}
-	main{
-		height: 90vh;
-		background-size: 25%;
-		background-position: center;
+	body main section#cadastro h2{
+		margin-bottom:-2vmax;
+		padding: 1vmax;
+		font-size: 2vmax;
 	}
 }
 
 @media(max-width:580px) {
 
-	body header{
-		padding: 0;
-		margin: 0;
-		top:0px;
-		height:10%;
+	body main section#cadastro{
+		width: 35vmax;
+		height: 60vmax;
+		margin:  15vmax auto;
 	}
-
-	body header h1 a#inith{
-		font-size: 1.5rem;
-	}
-	main{
-		background-position: center;
-		background-size: 5%;
-		padding: 20rem 0;
-		height:100vh
-	}
-
-	section#cadastro{
-		padding: 1.5rem 0rem
+	body main section#cadastro{
+		font-size: 1.5vmax;
 	}
 
 	footer{
 		padding: 1rem;
-		font-size: small;
+		font-size: 1.5vmax;
 	}
 }
 
@@ -127,7 +110,11 @@
 	}
 }
 
-
+body{
+	overflow-x: hidden;
+	width: 100vw;
+	height: 100vh;
+}
 header {
 	background: linear-gradient(
 			-45deg,
@@ -179,10 +166,7 @@ main {
 	background-attachment: fixed;
 	background-position: center;
 	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
-	padding-top: 7vmax;
+	min-height: 100vmax;
 }
 
 
@@ -197,20 +181,18 @@ section#cadastro {
 	border-radius: 1.5rem;
 	box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.651),
 		inset 1px -1px 4px rgba(0, 0, 0, 0.514);
-	width: 25rem;
-	height: 34.5rem;
-	align-self: center;
-	justify-self: center;
+	width: 35vmax;
+	height: 49vmax;
+	margin:  12vmax auto;
 	
 	
 }
 
 section#cadastro h2 {
-	padding: 1.6rem;
-	margin: -1.5rem 0rem -1.5rem 0rem;
-	font-size: 1.5rem;
+	margin:0;
+	padding: .2vmax;
+	font-size: 2vmax;
 	font-weight: 900;
-	width: 100%;
 	text-align: center;
 	color: rgb(240, 0, 248);
 	text-shadow: 4px 3px 5px rgb(0, 0, 0);
@@ -218,41 +200,41 @@ section#cadastro h2 {
 
 section#cadastro form {
 	width: 75%;
+	margin: 0;
+	padding: 0;
 }
 
 section#cadastro form input {
 	width: 100%;
-	font-size: 0.rem;
+	font-size: .8vmax;
 	outline: none;
 	border: solid 2px #05574a57;
 	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.664);
 	border-radius: .4rem;
 	font-family: pop, sans-serif;
+	margin-bottom: .8vmax;
 }
 
 section#cadastro form label {
 	color: whitesmoke;
 	text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.637);
-	font-size: .9rem;
-	margin: 0;
-	padding: 0;
-	margin-top: 1rem;
+	font-size: 1vmax;
 	
 }
 
 section#cadastro form button.btnform {
-	padding: 0.3rem 4rem;
+	padding: .6vmax 4vmax;
 	width: 10%;
 	display: flex;
 	justify-content: center;
-	margin: .5rem auto;
+	margin: 1vmax auto .5vmax auto;
 	background-color: rgba(34, 34, 34, 0.925);
 	color: rgb(0, 158, 158);
 	border-radius: 1rem;
 	font-weight: bolder;
 	border: 2px solid rgba(34, 34, 34, 0.925);
 	text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.726);
-	font-size: 1rem;
+	font-size: 1vmax;
 	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.432), inset 1px -1px 2px rgb(0, 0, 0);
 	opacity: 0.9;
 }
