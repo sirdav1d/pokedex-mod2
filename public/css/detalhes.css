@@ -41,24 +41,30 @@ body main section.card div#container{
 @media(max-width:580px){
 
 
-	main section.card{
-		width: 75%;
-		font-size: small;
+	body main section.card{
+		width: 35vmax;
+		height: 70vmax;
+		font-size: 2vmax;
+		margin: 20vmax auto;
 	}
-
-
-
-	main section.card p#num{
+	body main section.card img{
+		height: 22vmax;
+	}
+	body main section.card img:hover{
+		height: 30vmax;
+	}
+	body main section.card p#num{
 		font-size: smaller;
+		margin: 0;
 	}
 	main section.card div#container{
 		height: 7rem;
-		width: 95%;
-		text-align: center;
+		width: 90%;
+		font-size: 1.5vmax;
 	}
 
 	footer{
-		font-size: small;
+		font-size: 2vmax;
 	}
 }
 
@@ -104,6 +110,8 @@ body main section.card div#container{
 
 body{
 	overflow-x: hidden;
+	width: 100vw;
+	height: 100vh;
 }
 header {
 	background: linear-gradient(
@@ -149,8 +157,7 @@ main{
 	background-attachment: fixed;
 	background-position: center;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	min-height: 100vmax;
 
 }
 
@@ -158,6 +165,7 @@ main{
 
 section.card
  {
+	 margin: 15vmax auto;
 	color: whitesmoke;
 	width: 55vmax;
 	height: 40vmax;
@@ -168,7 +176,6 @@ section.card
 	backdrop-filter: blur(10px);
 	border: 1px rgb(255, 255, 255,0.1) solid;
 	border-radius: 2rem;
-	margin-top: 10vmax;
 	display: flex;
 	text-shadow: 4px 2px 3px black;
 	flex-direction: column;
