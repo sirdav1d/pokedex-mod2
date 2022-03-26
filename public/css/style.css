@@ -116,6 +116,9 @@
 }
 
 @media(max-width:580px) {
+	body header{
+	height:10vmax;
+}
 	body header nav ul li a{
 		font-size: 2vmax;
 	}

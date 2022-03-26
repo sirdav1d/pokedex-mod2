@@ -57,6 +57,9 @@
 }
 
 @media(max-width:850px){
+	body header{
+	height:10vmax;
+}
 	body main section#cadastro{
 		width: 40vmax;
 		height: 75vmax;
