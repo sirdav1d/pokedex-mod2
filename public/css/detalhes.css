@@ -39,16 +39,18 @@ body main section.card div#container{
 	}
 
 @media(max-width:680px){
-
+	body header{
+	height:10vmax;
+}
 
 	body main section.card{
-		width: 45vmax;
+		width: 40vmax;
 		height: 75vmax;
 		font-size: 2vmax;
 		margin: 10vmax auto;
 	}
 	body main section.card img{
-		height: 22vmax;
+		height: 20vmax;
 		margin:.5vmax;
 	}
 	body main section.card img:hover{
@@ -58,9 +60,9 @@ body main section.card div#container{
 		font-size: smaller;
 		margin: 0;
 	}
-	main section.card div#container{
+	body main section.card div#container{
 		height: 7rem;
-		width: 90%;
+		width: 80%;
 		font-size: 1.5vmax;
 	}
 
@@ -171,7 +173,7 @@ section.card
 	 margin: 2vmax auto 0 auto;
 	color: whitesmoke;
 	width: 45vmax;
-	height: 40vmax;
+	height: 36vmax;
 	box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.651),
 		inset 1px -1px 4px rgba(0, 0, 0, 0.514);
 	padding: 1rem;
