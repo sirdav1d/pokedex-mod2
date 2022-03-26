@@ -81,23 +81,24 @@
 
 
 @media(max-width:820px){
-body main section#card{
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
+
+	body main section#card{
+	width: 60vmax;
+	height: auto;
+
 	
 }
 
 	body main section#card h2{
 		font-size: 7vmax;
-		margin-top: 7vmax;
+		margin-top: 10vmax;
 	}
 	body main section#card div.card{
-		margin: 2vmax 3.5vmax;
-		width: 22vmax;
+		margin:2vmax;
+		width: 20vmax;
 		height: 25vmax;
-		align-self: center;
 		justify-self: left;
+		
 	}
 	body main section#card div.card h3{
 		font-size: 3.5vmax;
@@ -120,18 +121,15 @@ body main section#card{
 	body header nav ul li a{
 		font-size: 2vmax;
 	}
-	body main{
-		height: auto;
-		width: 100%;
-	}
+
 	body main section#card h2{
-		margin-top: 20vmax;
+		margin-top: 10vmax;
 	}
 
 	body main section#card div.card{
 		width: 30vmax;
 		height: 40vmax;
-		margin:  5vmax 20vmax;
+		margin:  4vmax 20vmax;
 	}
 	body main section#card div.card img{
 		height: 22vmax;
@@ -239,7 +237,6 @@ main {
 	background-attachment: fixed;
 	background-position: center;
 	display: flex;
-	align-items: center;
 	justify-content: space-evenly;
 	flex-wrap: wrap;
 	min-height: 100vmax;
@@ -249,12 +246,9 @@ main {
 }
 
 section#card {
-
-	margin: 0vmax 12vmax;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	align-items: center;
 	z-index: 98;
 }
 
@@ -265,7 +259,7 @@ section#card h2 {
 	font-size: 6vmax;
 	font-family: pokemon-solid;
 	font-weight:100;
-	padding: 0rem 20rem;
+	margin: 10rem 35rem 0 35rem;
 }
 section#card div.card {
 	color: whitesmoke;
@@ -278,11 +272,11 @@ section#card div.card {
 	backdrop-filter: blur(10px);
 	border: 1px rgb(255, 255, 255,0.1) solid;
 	border-radius: 2rem;
-	margin: .5vmax;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	transition: all .6s ease;
+	margin: -35vmax 2vmax;
 }
 
 section#card div.card:hover{
