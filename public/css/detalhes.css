@@ -49,6 +49,7 @@ body main section.card div#container{
 	}
 	body main section.card img{
 		height: 22vmax;
+		margin:.5vmax;
 	}
 	body main section.card img:hover{
 		height: 30vmax;

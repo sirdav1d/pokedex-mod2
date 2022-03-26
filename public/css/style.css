@@ -123,13 +123,13 @@
 	}
 
 	body main section#card h2{
-		margin-top: 10vmax;
+		margin-top: 15vmax;
 	}
 
 	body main section#card div.card{
 		width: 30vmax;
 		height: 40vmax;
-		margin:  4vmax 20vmax;
+		margin:  3vmax 20vmax;
 	}
 	body main section#card div.card img{
 		height: 22vmax;
@@ -238,6 +238,7 @@ main {
 	background-position: center;
 	display: flex;
 	justify-content: space-evenly;
+	align-items: flex-start;
 	flex-wrap: wrap;
 	min-height: 100vmax;
 
@@ -249,6 +250,7 @@ section#card {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	align-items: center;
 	z-index: 98;
 }
 
@@ -259,7 +261,7 @@ section#card h2 {
 	font-size: 6vmax;
 	font-family: pokemon-solid;
 	font-weight:100;
-	margin: 10rem 35rem 0 35rem;
+	margin: 10vmax 40vmax 0 40vmax;
 }
 section#card div.card {
 	color: whitesmoke;
@@ -276,7 +278,7 @@ section#card div.card {
 	flex-direction: column;
 	align-items: center;
 	transition: all .6s ease;
-	margin: -35vmax 2vmax;
+	margin: 1vmax;
 }
 
 section#card div.card:hover{
