@@ -14,17 +14,6 @@
  src: url(../assets/fonts/Poppins/Poppins-Regular.ttf);
 } 
 
-@media(max-width:1250px){
-	#inith{
-		font-size: 4rem;
-	}
-	main{
-		height: 80vh;
-	}
-
-
-}
-
 @media(max-width:820px){
 	body header{
 		padding: 0;
@@ -156,7 +145,7 @@ header {
 		justify-content: space-evenly;
 		align-items: center;
 	width: 100vw;
-	height: 15%;
+	height: 10vmax;
 	z-index: 99;
 	position: fixed;
 
@@ -168,7 +157,7 @@ header {
 
 header h1 a {
 	font-family: pokemon-hollow;
-	font-size: 2.5rem;
+	font-size: 4vmax;
 	font-weight: bolder;
 	color: rgb(1, 161, 161);
 	text-shadow:2px 2px 10px rgba(0, 0, 0, 0.384);
@@ -183,43 +172,17 @@ header h1 a:hover{
 
 }
 
-header nav ul{
-	display: flex;
-	justify-content: space-evenly;
-}
-
-header nav ul li{
-	font-size: large;
-	list-style: none;
-	font-weight: bold;
-	color: rgb(0, 128, 128);
-	margin-top: 1rem;
-}
-
-header nav ul li a {
-	color: rgb(1, 161, 161);
-	padding: 2rem;
-	text-decoration: none;
-	transition: all 1s ease;
-	text-shadow:2px 2px 10px rgba(0, 0, 0, 0.384);
-}
-
-header nav ul li a:hover{
-	color: aqua;
-	text-shadow: 2px 2px 8px aqua;
-}
-
 main {
 	background-image: url(../assets/media/poke2.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+	background-position: center;
 	display: flex;
 	justify-content: center;
-	padding: 10%;
-
-	
-	
+	align-items: center;
+	height: 100vh;
+	padding-top: 7vmax;
 }
 
 
@@ -236,7 +199,9 @@ section#cadastro {
 		inset 1px -1px 4px rgba(0, 0, 0, 0.514);
 	width: 25rem;
 	height: 34.5rem;
-	margin: auto;
+	align-self: center;
+	justify-self: center;
+	
 	
 }
 

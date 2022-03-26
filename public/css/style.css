@@ -81,35 +81,26 @@
 
 
 @media(max-width:820px){
-	body{
-		overflow-x: hidden;
-		margin: 0;
-		padding: 0;
-	}
-	body header{
-	height:10vmax;
-	}
-	body header h1 a{
-		font-size: 3.5vmax;
-
-	}
+body main section#card{
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
 	
-	body main{
-		background-size: cover;
-		background-position: center;
-		padding: 10%;
-	}
-	body main section#card{
-		margin: 0 5vmax;
-		justify-content: center;
-	}
+}
+
 	body main section#card h2{
 		font-size: 7vmax;
+		margin-top: 7vmax;
 	}
 	body main section#card div.card{
-		margin: 4vmax 5vmax;
-		width: 20vmax;
+		margin: 2vmax 3.5vmax;
+		width: 22vmax;
 		height: 25vmax;
+		align-self: center;
+		justify-self: left;
+	}
+	body main section#card div.card h3{
+		font-size: 3.5vmax;
 	}
 
 	body main section#card div.card img {
@@ -126,53 +117,51 @@
 }
 
 @media(max-width:580px) {
-	body{
-		overflow-x: hidden;
-
-	}
-	body header{
-		font-size: 1.5vmax;
-		height:8vmax;
-	}
-	body header h1 a{
-		font-size: 3vmax;
+	body header nav ul li a{
+		font-size: 2vmax;
 	}
 	body main{
-		background-size: cover;
-		background-position: center;;
-		height: 200vh;
-	}
-	body main section#card{
-		margin: 0 5vmax;
-		justify-content: center;
+		height: auto;
+		width: 100%;
 	}
 	body main section#card h2{
-		margin-top: -15vmax;
+		margin-top: 20vmax;
 	}
+
 	body main section#card div.card{
 		width: 30vmax;
-		height: 30vmax;
-		margin: 3vmax 25vmax;
+		height: 40vmax;
+		margin:  5vmax 20vmax;
 	}
 	body main section#card div.card img{
-		height: 18vmax;
-		margin: -3.5vmax 0;
+		height: 22vmax;
+		margin-bottom: -5.5vmax;
 	}
 	body main section#card div.card img:hover{
-		height: 22vmax;
-		transform: translateY(-4vmax);
+		height: 28vmax;
+		transform: translateY(-7.5vmax);
+		margin-bottom: -12.5vmax;
+	
 	}
 	body main section#card div.card h3{
 		font-size: 5vmax;
+		margin:0;
 	}
 	body main section#card div.card a{
 		font-size: 2.5vmax;
-		margin-top: -5.5vmax;
-		padding-top: 3vmax;
+		margin-top: -3.5vmax;
+		padding: 2.5vmax;
+	}
+	body footer{
+		font-size: 1.2vmax;
 	}
 }
 
-
+body{
+	overflow-x: hidden;
+	width: 100vw;
+	height: 100vh;
+}
 
 header {
 	background: linear-gradient(
@@ -191,7 +180,7 @@ header {
 		justify-content: space-evenly;
 		align-items: center;
 	width: 100vw;
-	height: 15%;
+	height: 10vmax;
 	z-index: 99;
 	position: fixed;
 
@@ -202,7 +191,7 @@ header {
 
 header h1 a {
 	font-family: pokemon-hollow;
-	font-size: 2.5rem;
+	font-size: 4vmax;
 	font-weight: bolder;
 	color: rgb(1, 161, 161);
 	text-shadow:2px 2px 10px rgba(0, 0, 0, 0.384);
@@ -223,7 +212,7 @@ header nav ul{
 }
 
 header nav ul li{
-	font-size: larger;
+	font-size: x-large;
 	list-style: none;
 	font-weight: bold;
 	color: rgb(0, 128, 128);
@@ -248,22 +237,23 @@ main {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	height: 100vh;
+	background-position: center;
 	display: flex;
-	justify-content: center;
 	align-items: center;
+	justify-content: space-evenly;
 	flex-wrap: wrap;
+	min-height: 100vmax;
 
 	
 	
 }
 
 section#card {
-	position: relative;
-	margin: 0rem 10vmax;
+
+	margin: 0vmax 12vmax;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-evenly;
+	justify-content: center;
 	align-items: center;
 	z-index: 98;
 }
@@ -272,16 +262,15 @@ section#card h2 {
 	color: rgb(255, 40, 40);
 	text-shadow: 4px 3px 10px rgb(0, 0, 0);
 	text-align: center;
-	font-size: 4rem;
+	font-size: 6vmax;
 	font-family: pokemon-solid;
 	font-weight:100;
-	align-self: center;
 	padding: 0rem 20rem;
 }
 section#card div.card {
 	color: whitesmoke;
-	width: 15vmax;
-	height: 15rem;
+	width: 14vmax;
+	height: 20vmax;
 	box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.651),
 		inset 1px -1px 4px rgba(0, 0, 0, 0.514);
 	padding: 1rem;
@@ -289,7 +278,7 @@ section#card div.card {
 	backdrop-filter: blur(10px);
 	border: 1px rgb(255, 255, 255,0.1) solid;
 	border-radius: 2rem;
-	margin-top: 3vmax;
+	margin: .5vmax;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
