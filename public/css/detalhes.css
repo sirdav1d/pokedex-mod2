@@ -20,11 +20,11 @@
 	scroll-behavior: smooth;
 }
 
-@media(max-width:820px){
+@media(max-width:1100px){
 	
 body main section.card{
 	width:50vmax;
-	height:50vmax;
+	height:60vmax;
 }
 body main section.card img{
 	height: 17vmax;
@@ -33,19 +33,19 @@ body main section.card img:hover{
 	height: 22vmax;
 }
 body main section.card div#container{
-	width: 35vmax;
+	width: 45vmax;
 }
 
 	}
 
-@media(max-width:580px){
+@media(max-width:680px){
 
 
 	body main section.card{
-		width: 35vmax;
-		height: 70vmax;
+		width: 45vmax;
+		height: 75vmax;
 		font-size: 2vmax;
-		margin: 20vmax auto;
+		margin: 10vmax auto;
 	}
 	body main section.card img{
 		height: 22vmax;
@@ -127,18 +127,20 @@ header {
 	animation: 45s 1ms ease-in-out infinite alternate gradient;
 	box-shadow: 4px 2px 10px rgba(0, 0, 0, 0.795),
 		inset 3px -3px 3px rgba(0, 0, 0, 0.548);
+		display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 100vw;
-	height: 10vmax;
+	height: 6.5vmax;
 	z-index: 99;
-	text-align: center;
-	position: fixed;
+	
 
 }
 
 
 header h1 a {
 	font-family: pokemon-hollow;
-	font-size: 4vmax;
+	font-size: 3.5vmax;
 	font-weight: bolder;
 	color: rgb(1, 161, 161);
 	text-shadow:2px 2px 10px rgba(0, 0, 0, 0.384);
@@ -166,9 +168,9 @@ main{
 
 section.card
  {
-	 margin: 15vmax auto;
+	 margin: 2vmax auto 0 auto;
 	color: whitesmoke;
-	width: 55vmax;
+	width: 45vmax;
 	height: 40vmax;
 	box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.651),
 		inset 1px -1px 4px rgba(0, 0, 0, 0.514);
@@ -229,7 +231,7 @@ section.card div#container{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	margin: 1rem 7rem;
+	margin: 1rem;
 	justify-content: center;
 	align-items: center;
 	background-color: rgba(0, 0, 0, 0.144);

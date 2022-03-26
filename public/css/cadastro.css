@@ -14,28 +14,69 @@
  src: url(../assets/fonts/Poppins/Poppins-Regular.ttf);
 } 
 
-@media(max-width:820px){
+@media(max-width:1220px){
 	body main section#cadastro{
-		margin: auto;
-		height: 60vmax;
-		width: 40vmax;
+		margin: 10vmax auto;
+		height: 55vmax;
+		width: 35vmax;
 	}
 	body main section#cadastro h2{
-		margin-bottom:-2vmax;
-		padding: 1vmax;
 		font-size: 2vmax;
+	}
+	body main section#cadastro form{
+		width: 80%;
+		height: 100%;
+	}
+	body main section#cadastro form label{
+		font-size: 1.5vmax;
 	}
 }
 
-@media(max-width:580px) {
+@media(max-width:1080px) {
 
 	body main section#cadastro{
-		width: 35vmax;
+		width: 45vmax;
 		height: 60vmax;
 		margin:  15vmax auto;
 	}
-	body main section#cadastro{
+	body main section#cadastro h2{
+		font-size: 2vmax;
+	}
+	body main section#cadastro form{
+		width: 80%;
+		height: 90%;
+	}
+	body main section#cadastro form label{
 		font-size: 1.5vmax;
+	}
+
+	footer{
+		padding: 1rem;
+		font-size: 1.5vmax;
+	}
+}
+
+@media(max-width:850px){
+	body main section#cadastro{
+		width: 40vmax;
+		height: 75vmax;
+		margin:  15vmax auto;
+	}
+	body main section#cadastro h2 {
+		font-size: 2.5vmax;
+	}
+	body main section#cadastro form{
+		width: 80%;
+		height: 90%;
+	}
+	body main section#cadastro form label{
+		font-size: 2vmax;
+	}
+	body main section#cadastro form input{
+		font-size: 1vmax;
+	}body main section#cadastro form button.btnform{
+		font-size: 2vmax;
+		padding: .8vmax 7vmax;
 	}
 
 	footer{
@@ -129,10 +170,10 @@ header {
 	box-shadow: 4px 2px 10px rgba(0, 0, 0, 0.795),
 		inset 3px -3px 3px rgba(0, 0, 0, 0.548);
 		display: flex;
-		justify-content: space-evenly;
+		justify-content: center;
 		align-items: center;
 	width: 100vw;
-	height: 10vmax;
+	height: 6.5vmax;
 	z-index: 99;
 	position: fixed;
 
@@ -144,12 +185,12 @@ header {
 
 header h1 a {
 	font-family: pokemon-hollow;
-	font-size: 4vmax;
+	font-size: 3.5vmax;
 	font-weight: bolder;
 	color: rgb(1, 161, 161);
 	text-shadow:2px 2px 10px rgba(0, 0, 0, 0.384);
 	text-decoration: none;
-	text-align: right;
+	top: 0px;
 	transition: all 1s ease;
 }
 
@@ -181,17 +222,17 @@ section#cadastro {
 	border-radius: 1.5rem;
 	box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.651),
 		inset 1px -1px 4px rgba(0, 0, 0, 0.514);
-	width: 35vmax;
-	height: 49vmax;
-	margin:  12vmax auto;
+	width: 30vmax;
+	height: 45vmax;
+	margin:  8vmax auto;
 	
 	
 }
 
 section#cadastro h2 {
 	margin:0;
-	padding: .2vmax;
-	font-size: 2vmax;
+	padding: .1vmax;
+	font-size: 1.5vmax;
 	font-weight: 900;
 	text-align: center;
 	color: rgb(240, 0, 248);
@@ -199,26 +240,27 @@ section#cadastro h2 {
 }
 
 section#cadastro form {
-	width: 75%;
+	width: 25vmax;
+	height: 40vmax;
 	margin: 0;
 	padding: 0;
 }
 
 section#cadastro form input {
 	width: 100%;
-	font-size: .8vmax;
+	font-size: .6vmax;
 	outline: none;
 	border: solid 2px #05574a57;
 	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.664);
 	border-radius: .4rem;
 	font-family: pop, sans-serif;
-	margin-bottom: .8vmax;
+	margin-bottom: .2vmax;
 }
 
 section#cadastro form label {
 	color: whitesmoke;
 	text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.637);
-	font-size: 1vmax;
+	font-size: .9vmax;
 	
 }
 
@@ -227,7 +269,7 @@ section#cadastro form button.btnform {
 	width: 10%;
 	display: flex;
 	justify-content: center;
-	margin: 1vmax auto .5vmax auto;
+	margin: 1.5vmax auto .5vmax auto;
 	background-color: rgba(34, 34, 34, 0.925);
 	color: rgb(0, 158, 158);
 	border-radius: 1rem;
