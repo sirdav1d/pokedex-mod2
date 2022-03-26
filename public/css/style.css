@@ -133,7 +133,7 @@
 	}
 	body main section#card div.card img{
 		height: 22vmax;
-		margin-bottom: -5.5vmax;
+		margin-bottom: -5vmax;
 	}
 	body main section#card div.card img:hover{
 		height: 28vmax;
