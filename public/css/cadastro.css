@@ -135,6 +135,7 @@
 
 	}body main section#cadastro form button.btnform{
 		font-size: 2vmax;
+		margin-top: 2.5vmax;
 	
 	}
 
@@ -143,6 +144,8 @@
 		font-size: 1.5vmax;
 	}
 }
+
+
 
 * {
 	padding: 0;
