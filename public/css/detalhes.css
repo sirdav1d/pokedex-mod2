@@ -56,9 +56,6 @@
 	}
 }
 
-
-
-
 @keyframes btn-anime {
 	50% {
 		color: aqua;
@@ -101,6 +98,7 @@ body{
 	width: 100vw;
 	height: 100vh;
 }
+
 header {
 	background: linear-gradient(
 			-45deg,
@@ -123,7 +121,6 @@ header {
 	
 
 }
-
 
 header h1 a {
 	font-family: pokemon-hollow;
@@ -152,8 +149,6 @@ main{
 	height: 100%;
 
 }
-
-
 
 section.card
  {
@@ -241,6 +236,7 @@ section.card div#container p{
 	transition: all .6s ease;
 	text-align: center;
 }
+
 section.card div#container p:hover{
 	color: red;
 }
