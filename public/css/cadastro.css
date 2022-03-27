@@ -14,7 +14,7 @@
  src: url(../assets/fonts/Poppins/Poppins-Regular.ttf);
 } 
 
-@media(max-width:1220px){
+/* @media(max-width:1220px){
 	body main section#cadastro{
 		margin: 10vmax auto;
 		height: 55vmax;
@@ -30,9 +30,9 @@
 	body main section#cadastro form label{
 		font-size: 1.5vmax;
 	}
-}
+} */
 
-@media(max-width:1080px) {
+/* @media(max-width:1080px) {
 
 	body main section#cadastro{
 		width: 45vmax;
@@ -54,32 +54,87 @@
 		padding: 1rem;
 		font-size: 1.5vmax;
 	}
-}
+} */
 
-@media(max-width:850px){
+@media(max-width:910px){
 	body header{
 	height:10vmax;
+	padding: 1vmax 2vmax;
 }
 	body main section#cadastro{
 		width: 40vmax;
-		height: 77vmax;
-		margin:  15vmax auto;
+		height: 70vmax;
+		margin:  -5vmax 5vmax;
+	}
+	body main div a{
+		font-size: 1.5vmax;
+		padding: .5vmax;
 	}
 	body main section#cadastro h2 {
 		font-size: 2.5vmax;
+		margin: -3vmax 0;
+		line-height: 3vmax;
 	}
 	body main section#cadastro form{
-		width: 80%;
-		height: 90%;
+		margin-top: -3vmax;
+
 	}
 	body main section#cadastro form label{
-		font-size: 2vmax;
+		font-size: 1.6vmax;
+		margin-top: .5vmax;
 	}
 	body main section#cadastro form input{
-		font-size: 1.7vmax;
+		font-size: 1.5vmax;
+		width: 32vmax;
+		border-radius: 1vmax;
+	
+
 	}body main section#cadastro form button.btnform{
 		font-size: 2vmax;
-		padding: .8vmax 7vmax;
+	
+	}
+
+	footer{
+		padding: 1rem;
+		font-size: 1.5vmax;
+	}
+}
+
+@media(max-width:700px){
+
+	body main section#cadastro{
+		width: 35vmax;
+		height: 80vmax;
+		margin:  -5vmax 4vmax;
+	}
+	body main div a{
+		font-size: 1.2vmax;
+		margin: 0 1vmax;
+		padding: .5vmax 1.5vmax;
+	
+	}
+	body main section#cadastro h2 {
+		font-size: 3vmax;
+		margin: -3vmax 0;
+		line-height: 4vmax;
+	}
+	body main section#cadastro form{
+		margin-top: -3vmax;
+
+	}
+	body main section#cadastro form label{
+		font-size: 1.6vmax;
+		margin-top: 1.5vmax;
+	}
+	body main section#cadastro form input{
+		font-size: 1.5vmax;
+		width: 25vh;
+		border-radius: 1vmax;
+	
+
+	}body main section#cadastro form button.btnform{
+		font-size: 2vmax;
+	
 	}
 
 	footer{
@@ -135,7 +190,7 @@
 		color: aqua;
 		border: 2px solid aqua;
 		opacity: 1;
-		text-shadow: 0px 0px 10px aqua;
+		text-shadow: 0px 0px 20px aqua;
 		box-shadow: 0px 0px 20px aqua;
 	}
 }
@@ -179,6 +234,7 @@ header {
 	height: 6.5vmax;
 	z-index: 99;
 	position: fixed;
+	top: 0px
 
 
 
@@ -210,9 +266,33 @@ main {
 	background-attachment: fixed;
 	background-position: center;
 	display: flex;
-	min-height: 100vmax;
+	justify-content: center;
+
+	flex-direction: row;
+	height: 100vh;
+	padding-top: 20vmax;
 }
 
+main div{
+	display: flex;
+	flex-direction: column;
+	font-size: 1.1vmax;
+	line-height: 3.5vmax;
+	
+}
+
+main div a{
+	text-decoration: none;
+	color: antiquewhite;
+	text-shadow: 4px 3px 2px rgb(0, 0, 0);
+	font-weight: bolder;
+	transition: all .8s ease;
+	text-align: center;
+}
+main div a:hover{
+	color:aqua;
+	text-shadow: 0px 0px 20px aqua;
+}
 
 section#cadastro {
 	display: flex;
@@ -222,40 +302,41 @@ section#cadastro {
 	background-color: rgb(255, 255, 255, 0.1);
 	backdrop-filter: blur(10px);
 	border: 1px rgb(255, 255, 255,0.1) solid;
-	border-radius: 1.5rem;
+	border-radius: 1vmax;
 	box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.651),
 		inset 1px -1px 4px rgba(0, 0, 0, 0.514);
-	width: 30vmax;
-	height: 45vmax;
-	margin:  8vmax auto;
+	width: 34vmax;
+	height: 39vmax;
+	margin: -11vmax 25vmax 0 4vmax;
 	
 	
 }
 
 section#cadastro h2 {
-	margin:0;
-	padding: .1vmax;
 	font-size: 1.5vmax;
-	font-weight: 900;
+	font-weight:lighter;
 	text-align: center;
-	color: rgb(240, 0, 248);
-	text-shadow: 4px 3px 5px rgb(0, 0, 0);
+	color: rgb(0, 158, 158);
+	font-family: pokemon-solid;
+	text-shadow: 2px 2px 5px rgb(0, 0, 0);
+	margin: 0vmax 2vmax;
 }
 
 section#cadastro form {
-	width: 25vmax;
-	height: 40vmax;
-	margin: 0;
-	padding: 0;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	flex-wrap: wrap;
+	
 }
 
 section#cadastro form input {
-	width: 100%;
-	font-size: .6vmax;
+	width: 25vmax;
+	font-size: .8vmax;
 	outline: none;
 	border: solid 2px #05574a57;
 	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.664);
-	border-radius: .4rem;
+	border-radius: .4vmax;
 	font-family: pop, sans-serif;
 	margin-bottom: .2vmax;
 }
@@ -263,16 +344,16 @@ section#cadastro form input {
 section#cadastro form label {
 	color: whitesmoke;
 	text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.637);
-	font-size: .9vmax;
+	font-size: 1vmax;
+	margin: 0;
 	
 }
 
 section#cadastro form button.btnform {
-	padding: .6vmax 4vmax;
-	width: 10%;
+	padding: .5vmax 1.5vmax;
 	display: flex;
 	justify-content: center;
-	margin: 1.5vmax auto .5vmax auto;
+	margin: auto;
 	background-color: rgba(34, 34, 34, 0.925);
 	color: rgb(0, 158, 158);
 	border-radius: 1rem;
@@ -282,18 +363,13 @@ section#cadastro form button.btnform {
 	font-size: 1vmax;
 	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.432), inset 1px -1px 2px rgb(0, 0, 0);
 	opacity: 0.9;
+	margin-top: .5vmax;
 }
 
 section#cadastro form button.btnform:hover {
 	cursor: pointer;
 	animation: 0.7s 1ms ease-in-out forwards btn-anime;
 }
-
-
-
-
-
-
 
 footer{
 	background: linear-gradient(
@@ -312,9 +388,10 @@ footer{
 	justify-content: center;
 	align-items: center;
 	color: whitesmoke;
-	padding: 1.5rem;
+	padding: 1.5vmax;
 	bottom: 0px;
 	text-shadow: 2px 2px 8px black;
+	font-size: 1.2vmax;
 }
 
 footer a{
@@ -326,5 +403,5 @@ footer a{
 
 footer a:hover{
 	color:aqua;
-	text-shadow: 2px 2px 8px aqua;
+	text-shadow: 0px 0px 20px aqua;
 }
