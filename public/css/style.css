@@ -79,42 +79,6 @@
 }
 
 
-/* @media(max-width:920px){
-
-	body main section#card{
-	width: 60vmax;
-	height: auto;
-
-}
-
-	body main section#card h2{
-		font-size: 7vmax;
-		margin-top: 10vmax;
-	}
-	body main section#card div.card{
-		margin:2vmax;
-		width: 20vmax;
-		height: 25vmax;
-		justify-self: left;
-		
-	}
-	body main section#card div.card h3{
-		font-size: 3.5vmax;
-	}
-
-	body main section#card div.card img {
-	height: 13vmax;
-	}
-	body main section#card div.card img:hover{
-		height: 20vmax;
-	}
-	
-	body main section#card div.card a{
-		font-size: 2vmax;
-		margin-top: -3.7vmax;
-	}
-} */
-
 @media(max-width:650px) {
 	body header{
 	height:8vmax;
@@ -136,7 +100,7 @@
 		height: 9.5vmax;
 	}
 	body main section#card div.card img:hover{
-		height: 12vmax;
+		height: 14vmax;
 	}
 	body main section#card div.card h3{
 		font-size: 3.5vmax;
