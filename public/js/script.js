@@ -1,5 +1,7 @@
-const btn = document.querySelector(".btnform")
+/** @format */
 
-    btn.addEventListener('click', function () {
-			window.alert('Pokémon cadastrado com sucesso!')
-    });
+const btn = document.querySelector('.btnform');
+
+btn.addEventListener('click', function () {
+	window.alert('Pokémon cadastrado com sucesso!');
+});

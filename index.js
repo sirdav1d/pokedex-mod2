@@ -33,7 +33,7 @@ const pokedex = [
 		name: 'Bulbasaur',
 		description:
 			'Há uma semente de planta nas costas desde o dia em que este Pokémon nasce. A semente cresce lentamente.',
-		type: 'Grama',
+		type: 'Planta',
 		abilities: 'Chicote de Vinha',
 		image:
 			'https://www.pkparaiso.com/imagenes/espada_escudo/sprites/animados-gigante/bulbasaur.gif',
