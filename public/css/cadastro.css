@@ -103,14 +103,15 @@
 @media(max-width:700px){
 
 	body main section#cadastro{
-		width: 35vmax;
+		width: 45vmax;
 		height: 80vmax;
 		margin:  -5vmax 4vmax;
 	}
 	body main div a{
 		font-size: 1.2vmax;
 		margin: 0 1vmax;
-		padding: .5vmax 1.5vmax;
+		padding: 1vmax 1.5vmax;
+		line-height: 2vmax;
 	
 	}
 	body main section#cadastro h2 {
@@ -128,7 +129,7 @@
 	}
 	body main section#cadastro form input{
 		font-size: 1.5vmax;
-		width: 25vh;
+		width: 23vmax;
 		border-radius: 1vmax;
 	
 
