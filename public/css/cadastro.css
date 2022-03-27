@@ -3,7 +3,6 @@
 	src: url(../assets/fonts/pokemon/Pokemon\ Solid.ttf);
 }
 
-
 @font-face {
 	font-family: pokemon-hollow;
 	 src: url(../assets/fonts/pokemon/Pokemon\ Hollow.ttf);
@@ -13,48 +12,6 @@
 	font-family: pop;
  src: url(../assets/fonts/Poppins/Poppins-Regular.ttf);
 } 
-
-/* @media(max-width:1220px){
-	body main section#cadastro{
-		margin: 10vmax auto;
-		height: 55vmax;
-		width: 35vmax;
-	}
-	body main section#cadastro h2{
-		font-size: 2vmax;
-	}
-	body main section#cadastro form{
-		width: 80%;
-		height: 100%;
-	}
-	body main section#cadastro form label{
-		font-size: 1.5vmax;
-	}
-} */
-
-/* @media(max-width:1080px) {
-
-	body main section#cadastro{
-		width: 45vmax;
-		height: 60vmax;
-		margin:  15vmax auto;
-	}
-	body main section#cadastro h2{
-		font-size: 2vmax;
-	}
-	body main section#cadastro form{
-		width: 80%;
-		height: 90%;
-	}
-	body main section#cadastro form label{
-		font-size: 1.5vmax;
-	}
-
-	footer{
-		padding: 1rem;
-		font-size: 1.5vmax;
-	}
-} */
 
 @media(max-width:910px){
 	body header{
@@ -148,18 +105,6 @@
 	}
 }
 
-
-
-* {
-	padding: 0;
-	margin: 0;
-	font-family: pop, Verdana, Geneva, Tahoma, sans-serif;
-	scroll-behavior: smooth;
-	
-}
-
-
-
 @keyframes btn-anime2 {
 	50% {
 		color: aqua;
@@ -216,11 +161,20 @@
 	}
 }
 
+* {
+	padding: 0;
+	margin: 0;
+	font-family: pop, Verdana, Geneva, Tahoma, sans-serif;
+	scroll-behavior: smooth;
+	
+}
+
 body{
 	overflow-x: hidden;
 	width: 100vw;
 	height: 100vh;
 }
+
 header {
 	background: linear-gradient(
 			-45deg,
@@ -247,7 +201,6 @@ header {
 
 	
 }
-
 
 header h1 a {
 	font-family: pokemon-hollow;
@@ -296,6 +249,7 @@ main div a{
 	transition: all .8s ease;
 	text-align: center;
 }
+
 main div a:hover{
 	color:aqua;
 	text-shadow: 0px 0px 20px aqua;
