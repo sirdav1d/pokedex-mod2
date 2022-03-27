@@ -62,7 +62,7 @@
 }
 	body main section#cadastro{
 		width: 40vmax;
-		height: 75vmax;
+		height: 77vmax;
 		margin:  15vmax auto;
 	}
 	body main section#cadastro h2 {
@@ -76,7 +76,7 @@
 		font-size: 2vmax;
 	}
 	body main section#cadastro form input{
-		font-size: 1vmax;
+		font-size: 1.7vmax;
 	}body main section#cadastro form button.btnform{
 		font-size: 2vmax;
 		padding: .8vmax 7vmax;
