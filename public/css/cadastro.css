@@ -267,20 +267,23 @@ section#cadastro {
 	box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.651),
 		inset 1px -1px 4px rgba(0, 0, 0, 0.514);
 	width: 34vmax;
-	height: 39vmax;
+	height: 35vmax;
 	margin: -11vmax 25vmax 0 4vmax;
+	padding: .5vmax;
 	
 	
 }
 
 section#cadastro h2 {
-	font-size: 1.5vmax;
+	font-size: 2vmax;
 	font-weight:lighter;
 	text-align: center;
 	color: rgb(0, 158, 158);
 	font-family: pokemon-solid;
 	text-shadow: 2px 2px 5px rgb(0, 0, 0);
 	margin: 0vmax 2vmax;
+	line-height: .1vmax;
+	letter-spacing: .11vmax;
 }
 
 section#cadastro form {
