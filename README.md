@@ -21,7 +21,7 @@
 
     
 Para construir esse projeto, você precisará de dados dos Pokémons, para isso utilize esse site, aqui também é um exemplo de como sua aplicação 
- pode ser com relação ao layout. Esse é um exemplo do projeto finalizado: https://pokedex-node-memoria.herokuapp.com/ 
+ pode ser com relação ao layout.
  (cadastre algum Pokémon para conseguir observar o layout).
 Requisitos:
 Criar um projeto no GitHub com Readme.md, .gitignore e licença;
