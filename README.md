@@ -1,7 +1,5 @@
 <main >
-      <h1>
-          <a href ="https://pokedex-sir-dav1d.herokuapp.com"> MASTER POKÉDEX</a> <img align="center" src="https://img.icons8.com/color/48/000000/superball.png"/> 
-  </h1>
+   
   <section align="center">
 
       
